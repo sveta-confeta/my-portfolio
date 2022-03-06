@@ -1,0 +1,26 @@
+.header{
+position: static;
+
+}
+
+.headerList{
+    display: flex;
+max-width: 500px;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.headerLink{
+    text-decoration: none;
+    color: wheat;
+    font-size: 21px;
+}
+.headerElement{
+
+    list-style: none;
+
+}
+.headerLink:hover{
+    color: aqua;
+
+}

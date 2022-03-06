@@ -1,0 +1,41 @@
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding:25px;
+}
+
+.skillsWrapper{
+    height: 100vh;
+    background-color: indigo;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+h2{
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.skillWrapper{
+    min-height:350px;
+    border:1px cadetblue solid;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleSkill{
+    margin-bottom: 30px;
+}
+.textSkill{
+    margin-bottom: 30px;
+}

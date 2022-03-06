@@ -1,0 +1,13 @@
+.infoMain{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -80px;
+}
+
+.foto{
+    width: 350px;
+    height: 450px;
+    background-color: brown;
+}

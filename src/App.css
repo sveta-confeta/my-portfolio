@@ -1,3 +1,7 @@
+*{
+  border: brown solid 1px;
+}
+
 body{
   color: wheat;
   background-color: #0e0019;

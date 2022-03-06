@@ -1,14 +1,14 @@
 import React from 'react';
 import s from './Skills.module.css';
 
-export const Skill = () => {
+export const Skill = (props) => {
     return (
         <div className={s.skillWrapper}>
             <h3 className={s.titleSkill}>
-                Навык
+                {props.title}
             </h3>
             <div className={s.textSkill}>
-Подробное описание навыка
+                {props.description}
             </div>
         </div>
     );

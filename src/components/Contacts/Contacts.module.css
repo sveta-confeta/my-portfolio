@@ -1,0 +1,60 @@
+.contactWrapper{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 20px;
+
+}
+form{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.text{
+    margin-bottom: 25px;
+    width: 400px;
+    height: 30px;
+}
+.tel{
+    margin-bottom: 25px;
+    width: 400px;
+    height: 30px;
+}
+.textarea{
+    width: 400px;
+    height: 100px;
+}
+.btn{
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+
+
+}
+@media (max-width: 500px) {
+    .text{
+        margin-bottom: 20px;
+        width: 280px;
+        height: 25px;
+    }
+    .tel{
+        margin-bottom: 20px;
+        width: 280px;
+        height: 25px;
+    }
+    .textarea{
+        width: 280px;
+
+    }
+}

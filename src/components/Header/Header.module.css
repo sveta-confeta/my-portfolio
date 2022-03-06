@@ -1,26 +1,52 @@
-.header{
-position: static;
-
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px;
 }
 
-.headerList{
+.header {
     display: flex;
-max-width: 500px;
-    justify-content: space-between;
-    margin-left: auto;
+    justify-content: flex-end;
 }
 
-.headerLink{
+.headerList {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    padding-left: 0;
+
+}
+
+.headerLink {
     text-decoration: none;
     color: wheat;
     font-size: 21px;
 }
-.headerElement{
+
+.headerElement {
 
     list-style: none;
 
 }
-.headerLink:hover{
+
+.headerLink:hover {
     color: aqua;
 
+}
+
+@media (max-width: 443px) {
+    .headerElement {
+        padding-left: 10px;
+
+    }
+
+    .headerList {
+        max-width:350px;
+    }
+    .headerLink {
+        font-size: 18px;
+    }
+    .header{
+        justify-content: center;
+    }
 }

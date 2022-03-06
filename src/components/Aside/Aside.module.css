@@ -1,0 +1,24 @@
+.wrapperAside{
+    background-color: orange;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding:25px;
+    text-align: center;
+}
+.telework{
+   font-size: 22px;
+    color: #0e0019;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.btn{
+
+    padding: 20px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+
+}

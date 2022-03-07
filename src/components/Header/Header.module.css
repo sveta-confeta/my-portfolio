@@ -2,11 +2,13 @@
     max-width: 1250px;
     margin: 0 auto;
     padding: 25px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header {
-    display: flex;
-    justify-content: flex-end;
+
+    border-bottom: orange 1px solid;
 }
 
 .headerList {

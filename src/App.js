@@ -1,17 +1,24 @@
 import './App.css';
-import {Header} from "./components/Header/Header";
-import Greeting from "./components/Greeting/Greeting";
 import {Skills} from "./components/Skills/Skills";
 import Works from "./components/Works/Works";
 import Aside from "./components/Aside/Aside";
 import Contacts from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
+import {Helmet} from "react-helmet";
+import {Promo} from "./components/Promo/Promo";
+import {AboutMe} from "./components/AboutMe/AbouteMe";
 
 function App() {
     return (
+
         <div className="App">
-            <Header/>
-            <Greeting/>
+            <Helmet>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap');
+                </style>
+            </Helmet>
+            <Promo/>
+            <AboutMe/>
             <Skills/>
             <Works/>
             <Aside/>

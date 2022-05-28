@@ -1,14 +1,17 @@
 .container {
     max-width: 1250px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 20px;
     display: flex;
     justify-content: flex-end;
 }
 
 .header {
-
-    border-bottom: orange 1px solid;
+    background-color:#000;
+    position: absolute;
+    width: 100%;
+    top:0;
+    right: 0;
 }
 
 .headerList {
@@ -22,7 +25,9 @@
 .headerLink {
     text-decoration: none;
     color: wheat;
-    font-size: 21px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .headerElement {
@@ -32,7 +37,7 @@
 }
 
 .headerLink:hover {
-    color: aqua;
+    color:  #F7D449;
 
 }
 

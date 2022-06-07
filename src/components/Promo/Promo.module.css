@@ -4,14 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*flex-wrap: wrap;*/
-    /*gap:20px;*/
-    /*align-items: center;*/
-    /*margin-top: -80px;*/
 
 }
-
-
 
 #stars {
     position: relative;
@@ -29,7 +23,9 @@
 canvas{
     width: 1300px !important;
     height: 100vh !important;
+
 }
+
 
 @media(max-width: 955px) {
     .infoMain{

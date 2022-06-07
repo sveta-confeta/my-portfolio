@@ -1,11 +1,12 @@
 import React from 'react';
-import s from './About.module.css';
+import s from "./AboutMe.module.css";
+import {Title} from "../ForAll/Title/Title";
 
-export const AboutMe = () => {
+const AboutMe = () => {
     return (
         <div className={s.abouteWrapper}>
             <div className={s.container}>
-                <h3 className={s.sectionTitle}>A STORY ABOUT ME</h3>
+              <Title title={'A STORY ABOUT ME'}/>
                 <p>I'm Svetlana Shunkova and I'm a freelance Web Designer.
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -15,5 +16,7 @@ export const AboutMe = () => {
 
             </div>
         </div>
-    )
+    );
 };
+
+export default AboutMe;

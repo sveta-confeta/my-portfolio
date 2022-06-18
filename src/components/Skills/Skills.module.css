@@ -53,10 +53,6 @@
     transform: translateY(0);
 }
 
-.card .face.face1 .content{
-    opacity: 0.2;
-    transition: 0.5s;
-}
 
 .card:hover .face.face1 .content{
     opacity: 1;
@@ -110,7 +106,15 @@
     color: #fff;
 }
 
+.icon{
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    transition: 0.5s;
 
+
+}
 
 
 /*@media (max-width: 890px) {*/

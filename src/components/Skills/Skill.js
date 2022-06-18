@@ -15,7 +15,7 @@ export const Skill = (props) => {
             <div className={`${s.face} ${s.face2}`}>
                 <div className={s.content}>
                     {props.description}
-                    <a href="#">Read More</a>
+
                 </div>
             </div>
         </div>

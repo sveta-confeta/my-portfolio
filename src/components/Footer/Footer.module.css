@@ -1,7 +1,8 @@
 .footerWrapper{
-    background-color: indigo;
+    background-color:  wheat;
 }
 .container{
+    color: #000000;
     max-width: 1250px;
     margin: 0 auto;
     padding:25px;

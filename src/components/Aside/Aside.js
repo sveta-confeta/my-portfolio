@@ -1,14 +1,19 @@
 import React from 'react';
-import s from './Aside.module.css'
+import s from './Aside.module.css';
 
 const Aside = () => {
     return (
         <div className={s.wrapperAside}>
             <div className={s.container}>
                 <div className={s.telework}>
-                    Рассматриваю варианты удаленной работы
+                    Look for  distant work  options <br/>
+                    and relocation
+
                 </div>
-                <button className={s.btn}>Нанять меня</button>
+
+               <a href={'#'} className={s.btnLink} > Hear me</a>
+
+
             </div>
         </div>
     );

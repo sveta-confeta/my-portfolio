@@ -11,6 +11,10 @@ import web from './../assets/image/icons/web.png'
 import photoSh from './../assets/image/icons/photoshop.png'
 import figma from './../assets/image/icons/figma.png'
 import ts from './../assets/image/icons/typescript.png'
+import redux from './../assets/image/icons/redux.png'
+import but from './../assets/image/icons/bootstrap.png'
+import ui from './../assets/image/icons/ui.png'
+import unit from './../assets/image/icons/unit-testing.png'
 
 
 export const Skills = () => {
@@ -41,6 +45,18 @@ export const Skills = () => {
     const tsIcon ={
         backgroundImage:`url(${ts})`
     }
+    const reduxIcon ={
+        backgroundImage:`url(${redux})`
+    }
+    const butIcon ={
+        backgroundImage:`url(${but})`
+    }
+    const uiIcon ={
+        backgroundImage:`url(${ui})`
+    }
+    const unitIcon ={
+        backgroundImage:`url(${unit})`
+    }
     return (
         <div className={s.skillsWrapper}>
 
@@ -57,10 +73,10 @@ export const Skills = () => {
                 <Skill title={'Photoshop'} description={'описание навыка Css'}  style={photoIcon}/>
                 <Skill title={'Figma'} description={'описание навыка Css'} style={figmaIcon}/>
                 <Skill title={'TypeScript'} description={'описание навыка Css'} style={tsIcon}/>
-                <Skill title={'Redux'} description={'описание навыка Css'}/>
-                <Skill title={'Bootstrap'} description={'описание навыка Css'}/>
-                <Skill title={'Material UI'} description={'описание навыка Css'}/>
-                <Skill title={'Unit testing'} description={'описание навыка Css'}/>
+                <Skill title={'Redux'} description={'описание навыка Css'} style={reduxIcon}/>
+                <Skill title={'Bootstrap'} description={'описание навыка Css'} style={butIcon}/>
+                <Skill title={'Material UI'} description={'описание навыка Css'} style={uiIcon}/>
+                <Skill title={'Unit testing'} description={'описание навыка Css'} style={unitIcon}/>
                 <Skill title={'TDD'} description={'описание навыка Css'}/>
 
             </div>

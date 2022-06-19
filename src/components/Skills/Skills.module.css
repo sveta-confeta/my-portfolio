@@ -54,8 +54,9 @@
 }
 
 
-.card:hover .face.face1 .content{
+.card:hover .icon{
     opacity: 1;
+    
 }
 
 .card .face.face1 .content img{

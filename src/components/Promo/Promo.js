@@ -10,7 +10,7 @@ export const Promo = () => {
         <div className={`${s.infoMain} `}>
             <Header/>
             <Helmet>
-                <script src="http://atuin.ru/js/art/stars.js" type="text/javascript"></script>
+                <script src="https://atuin.ru/js/art/stars.js" type="text/javascript"></script>
             </Helmet>
 
             <canvas id="stars">

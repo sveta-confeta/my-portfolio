@@ -1,0 +1,29 @@
+@import "../sass/variables";
+
+.title{
+    padding-top: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    .sectionTitle{
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 0;
+        color:$titleColor;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background:$lineColor;
+        transform: translate(-50%,50%);
+        height: 1px;
+        width: 50%;
+        left: 50%;
+        bottom: -17px;
+
+    }
+}
+
+
+

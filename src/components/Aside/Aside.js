@@ -11,7 +11,7 @@ const Aside = () => {
 
                 </div>
 
-               <a href={'#'} className={s.btnLink} > Hear me</a>
+               <a href={'#'} className={s.btnLink} > Hire me</a>
 
 
             </div>

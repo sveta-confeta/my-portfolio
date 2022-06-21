@@ -21,24 +21,25 @@
     background:#3D689C;
 }
 canvas{
-    width: 1300px !important;
+    max-width: 1300px !important;
     height: 100vh !important;
-
-}
-
-
-@media(max-width: 955px) {
-    .infoMain{
-        height: auto;
-        margin-top: 30px;
-        padding: 100px 0;
-
+    @media (max-width:1300px) {
+        max-width: 1100px !important;
+        }
+    @media (max-width:1100px) {
+        max-width: 900px !important;
+    }
+    @media (max-width:900px) {
+        max-width: 700px !important;
+    }
+    @media (max-width:700px) {
+        max-width: 500px !important;
+    }
+    @media (max-width:500px) {
+        max-width: 320px !important;
     }
 
-    h1{
-        font-size: 25px;
-    }
 }
-@media(max-width: 759px){
 
-}
+
+

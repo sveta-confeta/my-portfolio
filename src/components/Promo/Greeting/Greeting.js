@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Greeting.module.css';
+import s from './Greeting.module.scss';
 
 export const Greeting = () => {
 

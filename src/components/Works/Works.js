@@ -1,6 +1,6 @@
 import React from 'react';
 import Work from "./Work";
-import s from './Works.module.css'
+import s from './Works.module.scss'
 import {Title} from "../ForAll/Title/Title";
 import socImage from './../assets/image/Soc.jpg'
 import megamotoImage from './../assets/image/Megamoto.jpg'

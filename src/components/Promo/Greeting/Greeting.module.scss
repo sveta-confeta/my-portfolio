@@ -33,7 +33,7 @@
         h2.title{
             display: inline-block;
             background: #F7D449;
-            color: $titleColor;
+            color: $backgroundGeneral;
             font-size: 12px;
             text-transform: uppercase;
             padding: 12px 30px;
@@ -41,6 +41,11 @@
             font-weight: 700;
             @media (max-width:1100px) {
                 padding: 9px 20px;
+            }
+            @media (max-width:445px) {
+                padding: 5px 10px;
+                max-width: 250px;
+                text-align: center;
             }
         }
 

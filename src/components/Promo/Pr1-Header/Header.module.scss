@@ -2,10 +2,13 @@
 .header {
   background-color: #000;
   position: fixed;
+  z-index: 5;
   width: 100%;
   top: 0;
   right: 0;
-
+  @media (max-width: 443px) {
+      justify-content: center;
+  }
   .container {
     max-width: 1250px;
     margin: 0 auto;
@@ -20,7 +23,10 @@
   width: 500px;
   justify-content: space-between;
   padding-left: 0;
-  z-index: 1000;
+
+  @media (max-width: 443px){
+    max-width: 350px;
+  }
 
   .headerLink {
     text-decoration: none;
@@ -28,6 +34,12 @@
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    @media (max-width: 443px){
+      font-size: 18px;
+    }
+    &:hover {
+      color: #F7D449;
+    }
 
     .headerElement {
       list-style: none;
@@ -42,21 +54,5 @@
 }
 
 
-.headerLink:hover {
-  color: #F7D449;
-
-}
-
-@media (max-width: 443px) {
 
 
-  .headerList {
-    max-width: 350px;
-  }
-  .headerLink {
-    font-size: 18px;
-  }
-  .header {
-    justify-content: center;
-  }
-}

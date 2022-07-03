@@ -9,12 +9,16 @@ import todoImage from './../assets/image/todo.jpg'
 const Works = () => {
     const social={
         backgroundImage:`url(${socImage})`,
+        backgroundSize:'cover',
     }
     const megamoto={
         backgroundImage:`url(${megamotoImage})`,
+        backgroundSize:'cover',
     }
     const todolist={
         backgroundImage:`url(${todoImage})`,
+        backgroundSize:'cover',
+
     }
     return (
 

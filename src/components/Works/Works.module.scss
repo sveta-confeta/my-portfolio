@@ -1,10 +1,12 @@
+@import '../ForAll/sass/variables';
+
 .workWrapper{
     padding:25px;
     display: flex;
     flex-direction: column;
     justify-content:center ;
     align-items: center;
-    background-color: #000;
+    background-color: $secondBackground;
     .wrapper{
         max-width: 1250px;
         margin: 0 auto;
@@ -23,13 +25,13 @@
 .card {
     width: 450px;
     margin: 10px;
-    background-color: white;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: $secondBackground;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
     @media (max-width: 580px){
         width: 400px;
     }
     @media (max-width: 450px){
-        width: 300px;
+        width: 295px;
     }
     &:hover{
         .cardCaption {
@@ -53,6 +55,7 @@
     .cardThumb {
         position: relative;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         max-height: 400px;
         overflow: hidden;
@@ -94,9 +97,9 @@
     display: -webkit-box;
     max-height: 85px;
     overflow: hidden;
-    font-size: 23px;
-    line-height: 28px;
-    text-shadow: 0px 1px 5px black;
+    font-size: 28px;
+    line-height: 35px;
+    text-shadow: 0 1px 5px black;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -104,7 +107,7 @@
 .cardSnippet {
     display: -webkit-box;
     max-height: 150px;
-    margin: 20px 0;
+    margin: 40px 0 20px 0;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -126,7 +129,8 @@
     transition: 0.3s;
     &:hover {
         color: black;
-        background-color: white;
+        font-weight: bold;
+        background-color:$lineColor;
     }
 }
 @media (min-width: 1024px) {

@@ -7,7 +7,7 @@ export const Skill = (props) => {
 
         <div className={s.card}>
             <div className={`${s.face} ${s.face1}`} >
-                <div className="content">
+                <div className={s.contentFace}>
                     <div className={s.icon} style={props.style}>
                     </div>
                         <h3> {props.title}</h3>

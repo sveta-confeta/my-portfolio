@@ -11,10 +11,8 @@ import web from './../assets/image/icons/web.png'
 import photoSh from './../assets/image/icons/photoshop.png'
 import figma from './../assets/image/icons/figma.png'
 import ts from './../assets/image/icons/typescript.png'
-import redux from './../assets/image/icons/redux.png'
-import but from './../assets/image/icons/bootstrap.png'
-import ui from './../assets/image/icons/ui.png'
 import unit from './../assets/image/icons/unit-testing.png'
+import st from './../assets/image/icons/book.png'
 
 
 export const Skills = () => {
@@ -45,17 +43,11 @@ export const Skills = () => {
     const tsIcon ={
         backgroundImage:`url(${ts})`
     }
-    const reduxIcon ={
-        backgroundImage:`url(${redux})`
-    }
-    const butIcon ={
-        backgroundImage:`url(${but})`
-    }
-    const uiIcon ={
-        backgroundImage:`url(${ui})`
-    }
     const unitIcon ={
         backgroundImage:`url(${unit})`
+    }
+    const storybook ={
+        backgroundImage:`url(${st})`
     }
     return (
         <div className={s.skillsWrapper}>
@@ -64,20 +56,19 @@ export const Skills = () => {
             <div className={s.wrapper}>
                <Title title={'my skills'}/>
             <div className= {s.skills} >
-                <Skill title={'JS'} description={'описание навыка JS'} style={reactIcon}/>
-                <Skill title={'React'} description={'описание навыка React'} style={jsIcon}/>
-                <Skill title={'CSS'} description={'описание навыка Css'} style={cssIcon}/>
-                <Skill title={'GIT'} description={'описание навыка Css'} style={gitIcon}/>
-                <Skill title={'REST API'} description={'описание навыка Css'} style={apiIcon}/>
-                <Skill title={'WEB-Design'} description={'описание навыка Css'} style={webIcon}/>
-                <Skill title={'Photoshop'} description={'описание навыка Css'}  style={photoIcon}/>
-                <Skill title={'Figma'} description={'описание навыка Css'} style={figmaIcon}/>
-                <Skill title={'TypeScript'} description={'описание навыка Css'} style={tsIcon}/>
-                <Skill title={'Redux'} description={'описание навыка Css'} style={reduxIcon}/>
-                <Skill title={'Bootstrap'} description={'описание навыка Css'} style={butIcon}/>
-                <Skill title={'Material UI'} description={'описание навыка Css'} style={uiIcon}/>
-                <Skill title={'Unit testing'} description={'описание навыка Css'} style={unitIcon}/>
-                <Skill title={'TDD'} description={'описание навыка Css'}/>
+                <Skill title={'TypeScript'} description={'It is a better programming language compared to JS because it has strongly typed'} style={tsIcon}/>
+                <Skill title={'JavaScript'} description={'Asynchronous programming, functional programming'} style={jsIcon}/>
+                <Skill title={'React'} description={'Redux, Route, Redux-Thunk, Formik'} style={reactIcon}/>
+                <Skill title={'CSS'} description={'SASS, BEM, adaptive layout, Bootstrap, Material UI'} style={cssIcon}/>
+                <Skill title={'GIT'} description={'GitHab, work in a team, git merge'} style={gitIcon}/>
+                <Skill title={'REST API'} description={'Axios, Fetch, Postman'} style={apiIcon}/>
+                <Skill title={'WEB-Design'} description={'Creating a mobile version of the project'} style={webIcon}/>
+                <Skill title={'Photoshop'} description={'Creating of the layout and elements of the site,' +
+                    'layout accordinh to the layout of the site'}  style={photoIcon}/>
+                <Skill title={'Figma'} description={ 'Layout accordinh to the layout of the site'} style={figmaIcon}/>
+
+                <Skill title={'Unit testing'} description={'Isolating the written code for testing and determining whether it works as intended '} style={unitIcon}/>
+                <Skill title={'StoryBook'} description={'Storybook  for building UI components and pages in isolation'}  style={storybook}/>
 
             </div>
 

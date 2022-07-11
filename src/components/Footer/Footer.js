@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './Footer.module.css'
+import {Title} from "../Common/Title/Title";
 
 export const Footer = () => {
     return (
         <div className={s.footerWrapper}>
             <div className={s.container}>
-                <h2 className={s.name}>Шунькова Светлана Владимировна</h2>
+               <Title title={'Shunkova Svetlana'}/>
                 <div className={s.iconGroup}>
                     <div className={s.iconElement}> </div>
                     <div className={s.iconElement}> </div>

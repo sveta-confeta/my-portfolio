@@ -1,5 +1,7 @@
+@import '../Common/sass/variables';
+
 .footerWrapper{
-    background-color:  wheat;
+    background-color:$backgroundGeneral;
 }
 .container{
     color: #000000;

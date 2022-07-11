@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Contacts.module.scss'
-import {Title} from "../ForAll/Title/Title";
+import {Title} from "../Common/Title/Title";
 
 const Contacts = (props) => {
     return (

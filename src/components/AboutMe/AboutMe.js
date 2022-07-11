@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./AboutMe.module.scss";
-import {Title} from "../ForAll/Title/Title";
+import {Title} from "../Common/Title/Title";
 
 const AboutMe = () => {
     return (

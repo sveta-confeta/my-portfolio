@@ -1,10 +1,15 @@
 import React from 'react';
-import s from "./Header.module.scss";
+import s from "./BurgerNav.module.scss";
 
-const Nav = () => {
-    return (
+export const BurgerNav = () => {
+    let menuIsOpen=false;//нач.значение
+    let onBurgerBtnClick=()=>{
+        menuIsOpen=!menuIsOpen; // при клике меняется с true на false и наоборот
+    }
 
-            <ul className={s.headerList}>
+    return (<>
+
+            <ul className={s.mobileMenu}>
                 <a href='#' className={s.headerLink}>
                     <li className={s.headerElement}>Main</li>
                 </a>
@@ -18,7 +23,9 @@ const Nav = () => {
                     <li className={s.headerElement}>Contacts</li>
                 </a>
             </ul>
+            <div onClick={onBurgerBtnClick} className={s.burgerBtn}>
+
+            </div>
+        </>
     );
 };
-
-export default Nav;

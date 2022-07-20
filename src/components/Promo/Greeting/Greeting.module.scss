@@ -30,15 +30,15 @@
 
 
         }
-        h2.title{
+        & span{
             display: inline-block;
             background: #F7D449;
             color: $backgroundGeneral;
             font-size: 12px;
             text-transform: uppercase;
-            padding: 12px 30px;
+            padding: 10px 15px 10px 30px;
             letter-spacing: 3px;
-            font-weight: 700;
+            font-weight: bold;
             @media (max-width:1100px) {
                 padding: 9px 20px;
             }

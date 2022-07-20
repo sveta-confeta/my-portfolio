@@ -4,7 +4,7 @@ import {Title} from "../Common/Title/Title";
 
 const Contacts = (props) => {
     return (
-        <div className={s.contact}>
+        <div className={s.contact} id={'contacts'}>
             <div className={s.contactWrapper}>
                 <Title title={'contacts'}/>
                 <form className={s.form}>

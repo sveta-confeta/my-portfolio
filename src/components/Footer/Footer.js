@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Footer.module.css'
+import s from './Footer.module.scss'
 import {Title} from "../Common/Title/Title";
 
 export const Footer = () => {

@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Greeting.module.scss';
+import ReactTypingEffect from 'react-typing-effect';
 
 export const Greeting = () => {
 
@@ -11,7 +12,9 @@ export const Greeting = () => {
                 <div className={s.text}>
 
                     <h1>I'm Svetlana Shunkova</h1>
-                    <h2 className={s.title}>front-end developer | web developer</h2>
+                    <ReactTypingEffect
+                        text={["front-end developer | web developer"]}
+                    />
                 </div>
 
 

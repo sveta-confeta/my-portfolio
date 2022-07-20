@@ -1,6 +1,7 @@
 
 .header {
   background-color: #000;
+  opacity: 0.8;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -24,8 +25,11 @@
   justify-content: space-between;
   padding-left: 0;
 
-  @media (max-width: 443px){
+  @media screen and (max-width: 443px){
     max-width: 350px;
+  }
+  @media screen and (max-width: 400px){
+    display: none;
   }
 
   .headerLink {
@@ -34,9 +38,6 @@
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    @media (max-width: 443px){
-      font-size: 18px;
-    }
     &:hover {
       color: #F7D449;
     }

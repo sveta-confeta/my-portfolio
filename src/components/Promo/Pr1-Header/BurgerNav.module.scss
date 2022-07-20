@@ -1,0 +1,36 @@
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0;
+
+    @media screen and (min-width: 400px) {
+        display: none;
+    }
+}
+.headerLink {
+    text-decoration: none;
+    color: wheat;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: none;
+
+    &:hover {
+        color: #F7D449;
+    }
+}
+
+.headerElement {
+    list-style: none;
+   padding-bottom: 10px;
+}
+.burgerBtn{
+    width: 30px;
+    height: 30px;
+    background: #eeeeee;
+    position: relative;
+    top: 0;
+}

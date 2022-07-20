@@ -50,7 +50,7 @@ export const Skills = () => {
         backgroundImage:`url(${st})`
     }
     return (
-        <div className={s.skillsWrapper}>
+        <div className={s.skillsWrapper} id={'skills'}>
 
 
             <div className={s.wrapper}>

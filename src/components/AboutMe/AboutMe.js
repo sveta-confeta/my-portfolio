@@ -7,10 +7,13 @@ const AboutMe = () => {
         <div className={s.abouteWrapper}>
             <div className={s.container}>
               <Title title={'A STORY ABOUT ME'}/>
-                <p className={s.aboutP}>I'm Svetlana Shunkova and I'm a freelance Web Designer.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p className={s.aboutP}>I'm Svetlana Shunkova and I'm a responsible and motivated developer with
+                    experience in creating SPA, JS (Typescript), React, Redux,
+                    leading-page using CSS and Sass. Now I am improving my
+                    skills in this direction and expanding them with the help of
+                    new technologies. I spend my leisure time studying books,
+                    as well as improving my English.
+                    I will adapt to any requirements of the company.
                 </p>
 
 

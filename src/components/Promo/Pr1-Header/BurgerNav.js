@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from "./BurgerNav.module.scss";
 
 export const BurgerNav = () => {
-    let menuIsOpen=false;//нач.значение
+
+   // чтоб все перерисовывалось нужен хук-)
+    const [menuIsOpen,setMenuIsOpen]=useState(false);
+
     let onBurgerBtnClick=()=>{
-        menuIsOpen=!menuIsOpen; // при клике меняется с true на false и наоборот
+        setMenuIsOpen(!menuIsOpen) // при клике меняется с true на false и наоборот
     }
 
-    return (<>
+    return (< div className={s.burgerNav}>
 
-            <ul className={s.mobileMenu}>
+            <ul className={menuIsOpen ?  `${s.mobileMenu} ${s.show}` : s.mobileMenu}>
                 <a href='#' className={s.headerLink}>
                     <li className={s.headerElement}>Main</li>
                 </a>
@@ -26,6 +29,6 @@ export const BurgerNav = () => {
             <div onClick={onBurgerBtnClick} className={s.burgerBtn}>
 
             </div>
-        </>
+        </div>
     );
 };

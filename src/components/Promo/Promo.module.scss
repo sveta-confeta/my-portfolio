@@ -5,6 +5,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width:825px) {
+        height: 103vh !important;
+    }
+    @media (max-width:660px) {
+        height: 108vh !important;
+    }
+    @media (max-width:565px) {
+        height: 112vh !important;
+
+    }
+    @media (max-width:500px) {
+        height: 116vh !important;
+
+
+    }
+
 
 }
 
@@ -33,12 +49,12 @@ canvas{
     @media (max-width:900px) {
         max-width: 700px !important;
     }
+
     @media (max-width:700px) {
         max-width: 500px !important;
     }
-    @media (max-width:500px) {
-        max-width: 320px !important;
-    }
+
+
 
 }
 

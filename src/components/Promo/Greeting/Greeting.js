@@ -17,11 +17,6 @@ export const Greeting = () => {
                     />
                 </div>
 
-
-            {/*<div className={s.foto}>*/}
-
-            {/*</div>*/}
-
         </div>
     );
 };

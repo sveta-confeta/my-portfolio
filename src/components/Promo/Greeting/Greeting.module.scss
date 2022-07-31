@@ -1,7 +1,7 @@
 @import '../../Common/sass/variables';
 
 .greateTitle{
-    margin-top: 91px;
+
     position: absolute;
     z-index: -1;
 
@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 90px;
+        margin-bottom: 313px;
         h1 {
             font-size: 80px;
             font-weight: 600;
@@ -36,7 +36,7 @@
             color: $backgroundGeneral;
             font-size: 12px;
             text-transform: uppercase;
-            padding: 10px 15px 10px 30px;
+            padding: 6px 15px 6px 30px;
             letter-spacing: 3px;
             font-weight: bold;
             @media (max-width:1100px) {

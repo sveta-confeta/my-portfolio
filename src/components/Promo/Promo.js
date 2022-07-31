@@ -3,6 +3,7 @@ import {Header} from "./Pr1-Header/Header";
 import {Greeting} from "./Greeting/Greeting";
 import {Helmet} from "react-helmet";
 import s from './Promo.module.scss'
+import AboutMe from "./AboutMe/AboutMe";
 
 export const Promo = () => {
     return (
@@ -17,6 +18,7 @@ export const Promo = () => {
             </canvas>
 
             <Greeting/>
+            <AboutMe/>
         </div>
     );
 };

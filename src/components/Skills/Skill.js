@@ -5,7 +5,7 @@ import s from './Skills.module.scss';
 export const Skill = (props) => {
     return (
 
-        <div className={s.card}>
+        <div className={s.card} style={props.none}>
             <div className={`${s.face} ${s.face1}`} >
                 <div className={s.contentFace}>
                     <div className={s.icon} style={props.style}>

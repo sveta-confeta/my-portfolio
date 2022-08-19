@@ -23,6 +23,7 @@ const Works = () => {
     return (
 
         <div className={s.workWrapper} id={'projects'}>
+            <div className={s.fon}></div>
          <Title title={'my project'}/>
             <div className={s.wrapper}>
                 <Work style={todolist} title={'Todolist'} description={'описание проекта "Todolist"'}/>

@@ -1,116 +1,176 @@
 @import "../Common/sass/variables";
 
 .skillsWrapper {
-    background-color:#343437;
-    .wrapper {
-        height: 100%;
-        max-width: 1250px;
-        margin: 0 auto;
-        padding:25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        .skills{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 30px;
-            gap: 30px;
-        }
-    }
-}
+  background-image: url("../assets/image/backgroundMono.jpg");
+  background-position: center;
+  background-size: cover;
 
-
-.card{
-    position: relative;
-    cursor: pointer;
-}
-.card .face{
-    margin-top: -50px;
-    width: 200px;
-    height: 150px;
-    transition: 0.5s;
-
-}
-.card .face.face1{
-    position: relative;
-    background: #3b3a3c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(90px);
-}
-
-.card:hover .face.face1{
-    background:  #F7D449;
-    transform: translateY(0);
-}
-
-.contentFace{
+  .wrapper {
+    height: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-.card:hover .icon{
-    opacity: 1;
+    @media (max-width: 500px) {
+      padding: 15px;
+    }
 
-    
-}
-.card:hover h3{
-   color:#fff;
+    .skills {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -23px;
+      margin-bottom: 30px;
+      gap: 30px;
+      row-gap: 0;
+      @media (max-width: 500px) {
+       gap:15px
+      }
 
-}
-
-
-.card .face.face1 .content img{
-    max-width: 100px;
-}
-
-.card .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
+    }
+  }
 }
 
-.card .face.face2{
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+
+.card {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.card .face {
+  margin-top: -50px;
+  width: 200px;
+  height: 150px;
+  transition: 0.5s;
+  border-radius: 15px;
+  border: 1px solid #343437;
+  @media (max-width: 500px) {
+    width: 180px;
+    height: 140px;
+  }
+  @media (max-width: 406px) {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+.card .face.face1 {
+  position: relative;
+  background: #3b3a3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(90px);
+
+
+}
+
+.card:hover .face.face1 {
+  background: #ddc543;
+  transform: translateY(0);
+  border-bottom: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contentFace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .icon {
+  opacity: 1;
+
+
+}
+
+.card:hover h3 {
+  color: #fff;
+
+}
+
+
+.card .face.face1 .content img {
+  max-width: 100px;
+}
+
+.card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+  @media (max-width: 500px) {
+    transform: translateY(0);
+    padding: 12px;
+  }
+  @media (max-width: 406px) {
     transform: translateY(-10px);
+  }
 }
 
-.card:hover .face.face2{
-    transform: translateY(30px);
+.card:hover .face.face2 {
+  transform: translateY(30px);
 }
 
 .card .face.face2 .content {
-    padding-top: 10px;
-    color: $backgroundGeneral;
-    text-align: center;
-    font-weight: 800;
+  padding-top: 10px;
+  color: $backgroundGeneral;
+  text-align: center;
+  font-weight: 800;
 }
 
 
-.icon{
-    height: 70px;
-    width: 70px;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    transition: 0.5s;
-    margin-bottom: 5px;
+.icon {
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  transition: 0.5s;
+  margin-bottom: 5px;
 
 
+}
 
+.btn{
+  display: none;
+  background-color: #F7D449;
+  padding: 15px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  margin-top: 20px;
+  @media (max-width: 706px){
+    display: block;
+  }
+  @media (max-width: 580px){
+    margin-top: -10px;
+  }
+  @media (max-width: 400px){
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }

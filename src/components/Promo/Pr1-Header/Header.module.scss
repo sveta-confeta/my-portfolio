@@ -7,6 +7,9 @@
   width: 100%;
   top: 0;
   right: 0;
+  @media (max-width: 500px) {
+    max-width: 500px;
+  }
   @media (max-width: 400px) {
     background-color: transparent;
   }
@@ -17,7 +20,7 @@
     padding: 30px 20px;
     display: flex;
     justify-content: flex-end;
-    @media (max-width: 443px) {
+    @media (max-width: 500px) {
       justify-content: center;
     }
     }
@@ -29,8 +32,8 @@
   width: 500px;
   justify-content: space-between;
   padding-left: 0;
-  @media screen and (max-width: 443px){
-    max-width: 350px;
+  @media screen and (max-width: 500px){
+    max-width: 400px;
   }
   @media screen and (max-width: 400px){
     display: none;

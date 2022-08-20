@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Works.module.scss'
 
 const Work = (props) => {
+
     return (
         <div className={s.card}>
 
@@ -12,7 +13,7 @@ const Work = (props) => {
                 <figcaption className={s.cardCaption}>
                     <h2 className={s.cardTitle}>{props.title}</h2>
                     <p className={s.cardSnippet}>{props.description}</p>
-                    <a href="" className={s.cardButton}>Read more</a>
+                    <button onClick={()=>props.setOpenModal(true)} className={s.cardButton}>Read more</button>
                 </figcaption>
             </figure>
         </div>

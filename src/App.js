@@ -6,7 +6,7 @@ import Contacts from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
 import {Helmet} from "react-helmet";
 import {Promo} from "./components/Promo/Promo";
-import AboutMe from "./components/Promo/AboutMe/AboutMe";
+
 
 function App() {
     return (

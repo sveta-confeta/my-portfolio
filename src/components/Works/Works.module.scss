@@ -135,8 +135,9 @@
 .cardButton {
     display: inline-block;
     padding: 10px 20px;
-    color: white;
-    border: 1px solid white;
+    color: #343437;
+    border: 2px solid $lineColor ;
+    font-weight: bold;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
@@ -146,6 +147,7 @@
         color: black;
         font-weight: bold;
         background-color:$lineColor;
+        cursor: pointer;
     }
 }
 @media (min-width: 1024px) {

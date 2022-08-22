@@ -3,20 +3,21 @@ import {BasicModal} from "../../Common/modal/Modal";
 import s from './../../Common/modal/Modal.module.scss'
 
 
-export const SocialModal = React.memo(
+export const MegamotoModal = React.memo(
     ({isOpenModal, setIsOpenModal}) => {
 
         return (
             <BasicModal
                 isOpenModal={isOpenModal}
                 setIsOpenModal={setIsOpenModal}
-                title={'Social network'}
-                viewProgect={''}
+                title={'Megamoto'}
+                viewProgect={'https://megamoto.by/'}
+                viewCode={'https://bitbucket.org/Sanek_Petrovich/megamoto.by_6/src/master/'}
+
             >
                 <div className={s.description}>
-                    ggggggggggggggggggggggg
-                    ggggggggggggggggggg
-                    ggggggggggggggggggg
+                    Website design development, page layout.
+                    Create site using Css, JS-Native, library Swiper, AOS.
                 </div>
 
             </BasicModal>

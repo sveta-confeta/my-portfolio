@@ -3,7 +3,7 @@ import {BasicModal} from "../../Common/modal/Modal";
 import s from './../../Common/modal/Modal.module.scss'
 
 
-export const SocialModal = React.memo(
+export const TodolistModal = React.memo(
     ({isOpenModal, setIsOpenModal}) => {
 
         return (

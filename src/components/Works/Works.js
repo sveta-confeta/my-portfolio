@@ -7,9 +7,15 @@ import megamotoImage from './../assets/image/Megamoto.jpg'
 import todoImage from './../assets/image/todo.jpg'
 import learnImage from  './../assets/image/learnCard.jpg'
 import {SocialModal} from "./modal/SocialModal";
+import {MegamotoModal} from "./modal/MegamotoModal";
+import {TodolistModal} from "./modal/TodolistModal";
+import {LearnCardModal} from "./modal/LearnCardModal";
 
 const Works = () => {
-    const [openModal,setOpenModal]=useState(false)
+    const [openModalSoc,setOpenModalSoc]=useState(false)
+    const [openModalMeg,setOpenModalMeg]=useState(false)
+    const [openModalTodo,setOpenModalTodo]=useState(false)
+    const [openModalLearn,setOpenModalLearn]=useState(false)
     const social={
         backgroundImage:`url(${socImage})`,
         backgroundSize:'cover',
@@ -34,14 +40,16 @@ const Works = () => {
             <div className={s.fon}></div>
          <Title title={'my project'}/>
             <div className={s.wrapper}>
-                <Work  setOpenModal={setOpenModal} style={todolist} title={'Todolist'} description={'описание проекта "Todolist"'}/>
-                <Work setOpenModal={setOpenModal} style={social} title={'Social network'}  description={'описание проекта "Social network"'}/>
-                <Work setOpenModal={setOpenModal} style={megamoto} title={'Megamoto'}  description={'описание проекта "Counter" "Counter'}/>
-                <Work  setOpenModal={setOpenModal} style={learnCard} title={'Learn Cards'}  description={'описание проекта "Learn Cards"'}/>
+                <Work  setOpenModal={setOpenModalTodo} style={todolist} title={'Todolist'} description={'Todolist for planning yor tasks and affairs'}/>
+                <Work setOpenModal={setOpenModalSoc} style={social} title={'Social network'}  description={'Social network'}/>
+                <Work setOpenModal={setOpenModalMeg} style={megamoto} title={'Megamoto'}  description={'Website describing the work of the store.Help in choosing a product'}/>
+                <Work  setOpenModal={setOpenModalLearn} style={learnCard} title={'Learn Cards'}  description={'Possibility to create learning cards with questions and answers'}/>
 
             </div>
-            <SocialModal isOpenModal={openModal}
-            setIsOpenModal={setOpenModal}/>
+            <MegamotoModal isOpenModal={openModalMeg} setIsOpenModal={setOpenModalMeg}/>
+            <SocialModal isOpenModal={openModalSoc} setIsOpenModal={setOpenModalSoc}/>
+            <TodolistModal isOpenModal={openModalTodo} setIsOpenModal={setOpenModalTodo}/>
+            <LearnCardModal isOpenModal={openModalLearn} setIsOpenModal={setOpenModalLearn}/>
         </div>
     );
 };

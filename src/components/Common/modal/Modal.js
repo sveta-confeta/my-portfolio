@@ -27,7 +27,8 @@ export const BasicModal = ({
                                viewProgect,
                                isOpenModal,
                                setIsOpenModal,
-                               children
+                               children,
+                               viewCode,
 
                            }) => {
     const handleClose = () => {
@@ -38,9 +39,11 @@ export const BasicModal = ({
     return (
         <Modal
             open={isOpenModal}
-            // onClose={handleClose}
+            onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
+            viewProgect={viewProgect}
+            viewCode={viewCode}
         >
 
             <Box sx={style}>
@@ -59,7 +62,7 @@ export const BasicModal = ({
                             variant="contained">view
                         the
                         project</Button>
-                    <Button target={'_blank'} href={'https://bitbucket.org/Sanek_Petrovich/megamoto.by_6/src/master/'}
+                    <Button target={'_blank'} href={viewCode}
                             className={s.btn} color="secondary" variant="contained">view the
                         source
                         code</Button>

@@ -3,6 +3,7 @@ import s from './Works.module.scss'
 
 const Work = (props) => {
 
+
     return (
         <div className={s.card}>
 
@@ -15,6 +16,7 @@ const Work = (props) => {
                     <p className={s.cardSnippet}>{props.description}</p>
                     <button onClick={()=>props.setOpenModal(true)} className={s.cardButton}>Read more</button>
                 </figcaption>
+
             </figure>
         </div>
 

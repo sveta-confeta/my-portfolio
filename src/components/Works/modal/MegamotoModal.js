@@ -16,8 +16,11 @@ export const MegamotoModal = React.memo(
 
             >
                 <div className={s.description}>
-                    Website design development, page layout.
-                    Create site using Css, JS-Native, library Swiper, AOS.
+                    <div className={s.titleDescription}>
+                        Website design development, page layout.
+                        Create site using Css, JS-Native, library Swiper, AOS.
+                    </div>
+
                 </div>
 
             </BasicModal>

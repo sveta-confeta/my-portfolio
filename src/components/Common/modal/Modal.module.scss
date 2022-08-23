@@ -9,8 +9,9 @@
         justify-content: center;
         font-style: normal;
         font-weight: 800;
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 15px;
+        margin-left: -10px;
 
     }
     .close {
@@ -19,13 +20,32 @@
         right: -10px;
     }
 }
+.description{
+    .titleDescription{
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    .list li{
+        margin-bottom: 6px;
+        color: darkslategrey;
+    }
+    .error{
+        color:brown;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}
+
+
 
 
 
 
 
 .buttonsBlock {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 
     .btn {
@@ -35,7 +55,7 @@
         padding: 7px 27px !important;
         letter-spacing: 1px !important;
         color: #000000   !important;
-        opacity: 0.6 !important;
+        opacity: 0.8 !important;
         font-weight: bold !important;
         width: 260px;
 

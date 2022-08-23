@@ -10,13 +10,19 @@ export const TodolistModal = React.memo(
             <BasicModal
                 isOpenModal={isOpenModal}
                 setIsOpenModal={setIsOpenModal}
-                title={'Social network'}
+                title={'Todolist'}
                 viewProgect={''}
+                viewCode={'https://github.com/sveta-confeta/myTodoList'}
             >
                 <div className={s.description}>
-                    ggggggggggggggggggggggg
-                    ggggggggggggggggggg
-                    ggggggggggggggggggg
+                   <div className={s.titleDescription}>
+                       Create app using React, TS, Redux-Toolkit, Redux-Thunk, Axios, Formik, Material UI, unit tests
+                   </div>
+                    <ul className={s.list}>
+                        <li>Implemented autorization</li>
+                        <li>Creating, editing, deleting tasks</li>
+
+                    </ul>
                 </div>
 
             </BasicModal>

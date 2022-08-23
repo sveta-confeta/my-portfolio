@@ -16,7 +16,8 @@ const style = {   //это общие стили для модалки
     border: '',
     borderRadius: '8px',
     boxShadow: 24,
-    p: 3,
+    p: 4,
+    pl:5,
     color: 'black',
 
 };

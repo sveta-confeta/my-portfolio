@@ -12,11 +12,21 @@ export const SocialModal = React.memo(
                 setIsOpenModal={setIsOpenModal}
                 title={'Social network'}
                 viewProgect={''}
+                viewCode={'https://github.com/sveta-confeta/social-network-new-version'}
             >
                 <div className={s.description}>
-                    ggggggggggggggggggggggg
-                    ggggggggggggggggggg
-                    ggggggggggggggggggg
+                    <div className={s.titleDescription}>
+                        Create app using React, TS, Redux-Thunk, Axios, Formik, Material UI, unit tests
+                    </div>
+                    <ul className={s.list}>
+                        <li>Implemented autorization</li>
+                        <li>Profile editing</li>
+                        <li>Correspondence with other users</li>
+                        <li>Navigation through user pages</li>
+                        <li>Follow and unfollow</li>
+
+                    </ul>
+                    <div className={s.error}>Attention! Website design in development! Sorry for the inconvenience.</div>
                 </div>
 
             </BasicModal>

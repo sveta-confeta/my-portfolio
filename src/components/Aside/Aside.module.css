@@ -107,7 +107,7 @@ a.btnLink:hover {
 
     color:  #343437;
     font-weight: bold;
-    background-image:  url('../assets/image/pixel2.png');
+    background: #343437 url('../assets/image/pixel2.png');
     transition-delay: 0.8s;
     background-size: 180px;
     animation: animate var(--speed-fast) steps(8) forwards;

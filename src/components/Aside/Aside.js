@@ -11,7 +11,7 @@ const Aside = () => {
 
                 </div>
 
-               <a href={'#'} className={s.btnLink} > Hire me</a>
+               <a  target={'_blank'} href={'https://t.me/SvetlanaShuncova'} className={s.btnLink} > Hire me</a>
 
 
             </div>

@@ -1,5 +1,6 @@
 .wrapperAside{
     background-image: url("./../assets/image/background.jpg");
+    background-size: cover;
 }
 
 .container{

@@ -11,7 +11,7 @@ const AboutMe = () => {
                 </div>
                 <div className={s.title}><div className={s.sectionTitle}> A STORY ABOUT ME </div></div>
                 <p className={s.aboutP}>I'm a responsible and motivated developer with
-                    experience in creating SPA, JS (Typescript), React, Redux,
+                    experience in creating SPA, JS (Typescript), React, Next, Redux,
                     leading-page using CSS and SASS. Now I am improving my
                     skills in this direction and expanding them with the help of
                     new technologies. I spend my leisure time studying books,

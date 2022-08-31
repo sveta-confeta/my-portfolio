@@ -12,6 +12,7 @@ body{
   color: wheat;
   /*background-color: #0e0019;*/
   background-image: url("./components/assets/image/background.jpg");
+ background-size: cover;
   box-sizing: border-box;
 
 }

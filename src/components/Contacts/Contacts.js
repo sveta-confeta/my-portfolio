@@ -5,6 +5,9 @@ import {useFormik} from "formik";
 
 const Contacts = (props) => {
 
+
+    // window.screen.width
+
     const formik = useFormik({
         initialValues: {
             username: '',
@@ -14,16 +17,19 @@ const Contacts = (props) => {
 
         },
         onSubmit: values => {
-            // dispatch(setRegistrTC(values));
             alert(JSON.stringify(values));
             formik.resetForm();
         },
     })
+
+
+
     return (
         <div className={s.contact} id={'contacts'}>
             <div className={s.contactWrapper}>
                 <Title title={'contacts'}/>
                 <form className={s.form} onSubmit={formik.handleSubmit}>
+                    <p className={s.title}>You can send me a message by email:</p>
                     <fieldset>
                         <input type="text" id='username' className={s.text} placeholder={'ФИO'} autoFocus
                                {...formik.getFieldProps('username')}/>

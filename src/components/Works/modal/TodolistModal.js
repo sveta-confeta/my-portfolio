@@ -11,7 +11,7 @@ export const TodolistModal = React.memo(
                 isOpenModal={isOpenModal}
                 setIsOpenModal={setIsOpenModal}
                 title={'Todolist'}
-                viewProgect={''}
+                viewProgect={'https://sveta-confeta.github.io/my-todolist/#/login'}
                 viewCode={'https://github.com/sveta-confeta/myTodoList'}
             >
                 <div className={s.description}>

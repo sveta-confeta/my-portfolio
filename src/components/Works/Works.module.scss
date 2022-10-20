@@ -1,206 +1,238 @@
 @import '../Common/sass/variables';
 
-.workWrapper{
-    background-image: url("./../assets/image/background.jpg");
-    position: relative;
-    padding:25px;
+.workWrapper {
+  background-image: url("./../assets/image/background.jpg");
+  position: relative;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondBackground;
+
+  .fon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    background-color: $secondBackground;
-    .fon{
-        position: absolute;
-        top:0;
-        width: 100%;
-        height: 100%;
-        transition: 0.5s;
-        border-radius:10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        background: rgba(0, 0, 0, 0.7);
-    }
-    .wrapper{
-        max-width: 1250px;
-        margin: 0 auto;
-        width: 100%;
-        display: flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        margin-bottom: 30px;
-        gap: 20px;
+    background: rgba(0, 0, 0, 0.7);
+  }
 
-    }
+  .wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+
+  }
 }
 
 
-     /*//Work*/
+/*//Work*/
+.cardWrapper{
+  position: relative;
+  min-width: 330px;
+  padding: 10px;
+  height: 340px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
 .card {
-    width: 450px;
-    margin: 10px;
-    background-color: $secondBackground;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
-    @media (max-width: 580px){
-        width: 400px;
-    }
-    @media (max-width: 450px){
-        width: 295px;
-    }
-    &:hover{
-        .cardCaption {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .cardImage {
-            transform: translateY(-10px);
-        }
-        .cardThumb{
-            ::after {
-                top: 0;
-            }
+  width: 450px;
+  margin: 10px;
+  background-color: $secondBackground;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  @media (max-width: 580px) {
+    width: 400px;
+  }
+  @media (max-width: 450px) {
+    width: 295px;
+  }
 
-        }
-        .cardSnippet {
-            margin: 20px 0;
-        }
+  &:hover {
+    .cardCaption {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .cardImage {
+      transform: translateY(-10px);
     }
 
     .cardThumb {
-        position: relative;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        max-height: 400px;
-        overflow: hidden;
-        &::after {
-            position: absolute;
-            top: 0;
-            display: block;
-            content: '';
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, 0) 100%);
-            transition: 0.3s;
-        }
+      ::after {
+
+        top: 0;
+      }
+
     }
+
+    .cardSnippet {
+      margin: 20px 0;
+    }
+  }
+
+  .cardThumb {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      //background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, 0) 100%);
+      transition: 0.3s;
+    }
+  }
 
 
 }
 
 
 .cardImage {
-    transition: 1s ease-in-out;
-    width: 450px;
-    height: 300px;
+  transition: 1s ease-in-out;
+  width: 450px;
+  height: 300px;
 }
+
 .cardCaption {
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    padding: 0 20px;
-    letter-spacing: 2px;
-
-    color: white;
-    transform: translateY(-50%);
-    text-align: center;
-    transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  padding: 0 20px;
+  letter-spacing: 2px;
+  color: white;
+  transform: translateY(-30%);
+  text-align: center;
+  transition: 0.8s;
 
 }
+
 .cardTitle {
-    display: -webkit-box;
-    max-height: 85px;
-    overflow: hidden;
-    font-size: 28px;
-    line-height: 35px;
-    text-shadow: 0 1px 5px black;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+  display: -webkit-box;
+  max-height: 85px;
+  overflow: hidden;
+  font-size: 35px;
+  line-height: 35px;
+  text-shadow: 0 1px 10px black;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 }
+
 .cardSnippet {
-    display: -webkit-box;
-    max-height: 150px;
-    margin: 40px 0 20px 0;
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-overflow: ellipsis;
-    transition: 0.5s ease-in-out;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+  display: -webkit-box;
+  max-height: 150px;
+  margin: 40px 0 20px 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  transition: 0.5s ease-in-out;
+  -webkit-box-orient: vertical;
 }
+
 .cardButton {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #343437;
-    border: 2px solid $lineColor ;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #343437;
+  border: 2px solid $lineColor;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: black;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 0.3s;
-    &:hover {
-        color: black;
-        font-weight: bold;
-        background-color:$lineColor;
-        cursor: pointer;
-    }
-}
-@media (min-width: 1024px) {
-    .cardThumb {
-        max-height: 500px;
-    }
+    background-color: $lineColor;
+    cursor: pointer;
+
+  }
 }
 
 @media (min-width: 1024px) {
-    .cardThumb::after {
-        top: calc(100% - 140px);
-    }
+  .cardThumb {
+    max-height: 500px;
+  }
 }
 
+@media (min-width: 1024px) {
+  .cardThumb::after {
+    top: calc(100% - 140px);
+
+  }
+}
 
 @media (min-width: 1024px) {
-    .cardCaption {
-        top: calc(100% - 58px);
-        transform: unset;
-    }
+  .cardThumb:hover::after {
+   background-color: rgba(17, 40, 44, 0.63);
+
+  }
 }
 
 
 @media (min-width: 1024px) {
-    .cardSnippet {
-        margin: 60px 0;
-    }
+  .cardCaption {
+    top: calc(100% - 69px);
+    transform: unset;
+  }
 }
 
 
-
-
-@media (max-width:1300px) {
-    .oneWork {
-        min-width: 400px;
-    }
-}
-@media (max-width:1015px){
-    .wrapper{
-        justify-content:center;
-
-    }
+@media (min-width: 1024px) {
+  .cardSnippet {
+    margin: 60px 0;
+  }
 }
 
-@media (max-width:515px) {
-    .img {
-        max-width: 250px;
-        min-height: 200px;
-    }
-    .oneWork {
-        min-width: 280px;
-        padding: 15px;
-    }
+
+@media (max-width: 1300px) {
+  .oneWork {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .wrapper {
+    justify-content: center;
+
+  }
+}
+
+@media (max-width: 515px) {
+  .img {
+    max-width: 250px;
+    min-height: 200px;
+  }
+  .oneWork {
+    min-width: 280px;
+    padding: 15px;
+  }
 }
 
 

@@ -5,21 +5,22 @@ const Work = (props) => {
 
 
     return (
-        <div className={s.card}>
+        <div className={s.cardWrapper}>
+            <div className={s.card}>
 
-            <figure className={s.cardThumb}>
+                <figure className={s.cardThumb}>
 
-                <div className={s.cardImage} style={props.style}></div>
+                    <div className={s.cardImage} style={props.style}></div>
 
-                <figcaption className={s.cardCaption}>
-                    <h2 className={s.cardTitle}>{props.title}</h2>
-                    <p className={s.cardSnippet}>{props.description}</p>
-                    <button onClick={()=>props.setOpenModal(true)} className={s.cardButton}>Read more</button>
-                </figcaption>
+                    <figcaption className={s.cardCaption}>
+                        <h2 className={s.cardTitle}>{props.title}</h2>
+                        <p className={s.cardSnippet}>{props.description}</p>
+                        <button onClick={() => props.setOpenModal(true)} className={s.cardButton}>Read more</button>
+                    </figcaption>
 
-            </figure>
+                </figure>
+            </div>
         </div>
-
     );
 };
 

@@ -1,0 +1,74 @@
+
+.button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute !important;
+  top: 48%;
+  z-index: 55;
+  cursor: pointer;
+  background-color: #1c1c21;
+  border: none;
+  box-shadow: -4px -4px 5px #28292c, 2px 2px 5px #222,
+  inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+  color: #222;
+  font-size: 16px;
+}
+
+.button2 {
+  right: 10%;
+  margin-right: 4px;
+
+  &:after {
+    content: "";
+    background: url("./../assets/image/arrow/right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+  }
+
+}
+
+
+
+.button:hover {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  font-size: 15px;
+  transition: 500ms;
+  border: 1px solid #444;
+}
+
+.button1 {
+  left: 10%;
+  margin-left: 4px;
+
+}
+
+
+.button1:after {
+  content: "";
+  background: url("./../assets/image/arrow/left.png ");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+
+}
+
+
+
+
+
+
+

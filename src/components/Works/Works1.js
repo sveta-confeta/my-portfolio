@@ -10,15 +10,12 @@ import {SocialModal} from "./modal/SocialModal";
 import {MegamotoModal} from "./modal/MegamotoModal";
 import {TodolistModal} from "./modal/TodolistModal";
 import {LearnCardModal} from "./modal/LearnCardModal";
-import {ScandiModal} from "./modal/ScandiModal";
-import scandiImage from "./../assets/image/scandi.jpg"
 
-const Works = () => {
+export const Works1 = () => {
     const [openModalSoc,setOpenModalSoc]=useState(false)
     const [openModalMeg,setOpenModalMeg]=useState(false)
     const [openModalTodo,setOpenModalTodo]=useState(false)
     const [openModalLearn,setOpenModalLearn]=useState(false)
-    const [openModalScandi,setOpenModalScandi]=useState(false)
     const social={
         backgroundImage:`url(${socImage})`,
         backgroundSize:'cover',
@@ -37,11 +34,6 @@ const Works = () => {
         backgroundSize:'cover',
 
     }
-    const scandi={
-        backgroundImage:`url(${scandiImage})`,
-        backgroundSize:'cover',
-
-    }
     return (
 
         <div className={s.workWrapper} id={'projects'}>
@@ -52,16 +44,13 @@ const Works = () => {
                 <Work setOpenModal={setOpenModalSoc} style={social} title={'Social network'}  description={'Social network'}/>
                 <Work setOpenModal={setOpenModalMeg} style={megamoto} title={'Megamoto'}  description={'Website describing the work of the store.Help in choosing a product'}/>
                 <Work  setOpenModal={setOpenModalLearn} style={learnCard} title={'Learn Cards'}  description={'Possibility to create learning cards with questions and answers'}/>
-                <Work  setOpenModal={setOpenModalScandi} style={scandi} title={'Scandi'}  description={'LandingPage- learn CSS-project'}/>
+
 
             </div>
             <MegamotoModal isOpenModal={openModalMeg} setIsOpenModal={setOpenModalMeg}/>
             <SocialModal isOpenModal={openModalSoc} setIsOpenModal={setOpenModalSoc}/>
             <TodolistModal isOpenModal={openModalTodo} setIsOpenModal={setOpenModalTodo}/>
             <LearnCardModal isOpenModal={openModalLearn} setIsOpenModal={setOpenModalLearn}/>
-            <ScandiModal isOpenModal={openModalScandi} setIsOpenModal={setOpenModalScandi}/>
         </div>
     );
 };
-
-export default Works;

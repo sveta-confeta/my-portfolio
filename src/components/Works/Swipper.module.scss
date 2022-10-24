@@ -10,21 +10,32 @@
   background-color: #1c1c21;
   border: none;
   box-shadow: -4px -4px 5px #28292c, 2px 2px 5px #222,
-  inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+  inset 5px 5px 10px #444, inset -5px -15px 10px #222;
   color: #222;
   font-size: 16px;
+  &:disabled{
+    background-color: #2c2c31 !important;
+  }
+
 }
+
+
 
 .button2 {
   right: 10%;
   margin-right: 4px;
-
-  &:after {
-    content: "";
+  &:disabled{
     background: url("./../assets/image/arrow/right.png");
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.4;
+    opacity: 0.5;
+    border: #444 1px solid ;
+  }
+  &:not([disabled]):after {
+    content: "";
+    background: url("./../assets/image/arrow/rightYellow.png");
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,12 +43,23 @@
     right: 0;
 
   }
+  //&:disabled{
+  //  content: "";
+  //  background: url("./../assets/image/arrow/left.png ");
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //  opacity: 0.4;
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //
+  //}
 
 }
 
-
-
-.button:hover {
+.button:not([disabled]):hover {
   box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
   font-size: 15px;
   transition: 500ms;
@@ -47,24 +69,42 @@
 .button1 {
   left: 10%;
   margin-left: 4px;
-
+  &:disabled{
+    background: url("./../assets/image/arrow/left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    border: #444 1px solid ;
+  }
+  &:not([disabled]):after{
+    content: "";
+    background: url("./../assets/image/arrow/leftYellow.png ");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  //&:disabled{
+  //  content: "";
+  //  background: url("./../assets/image/arrow/left.png ");
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //  opacity: 0.4;
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //
+  //}
 }
 
 
-.button1:after {
-  content: "";
-  background: url("./../assets/image/arrow/left.png ");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
 
 
-}
 
 
 

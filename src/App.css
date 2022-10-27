@@ -4,13 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border:1px solid red;*/
+  border:1px solid red;
 }
 
 body{
   font-family: 'Nunito Sans', sans-serif;
   color: wheat;
-  /*background-color: #0e0019;*/
   background-image: url("./components/assets/image/background.jpg");
  background-size: cover;
   box-sizing: border-box;

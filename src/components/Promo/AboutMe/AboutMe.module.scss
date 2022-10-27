@@ -7,6 +7,9 @@
   position: absolute;
   bottom:0;
   padding-bottom: 20px;
+  @media (max-width: 570px) {
+
+  }
 
   .container {
     min-width: 320px;
@@ -14,8 +17,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 130px 20px 30px 20px;
+    padding: 130px 20px 50px 20px;
     position: relative;
+    @media (max-width: 570px) {
+      min-height: 348px;
+    }
 
     &:after {
       content: '';

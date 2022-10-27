@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import Work from "./Work";
-import s from './Works.module.scss'
-import {Title} from "../Common/Title/Title";
-import {ScandiModal} from "./modal/ScandiModal";
-import scandiImage from "./../assets/image/scandi.jpg"
+import Work from "./../Work";
+import s from './../Works.module.scss'
+import {Title} from "../../Common/Title/Title";
+import {ScandiModal} from "./../modal/ScandiModal";
+import scandiImage from "./../../assets/image/scandi.jpg"
 
-export const Works2 = () => {
+export const WorksMob3 = () => {
 
     const [openModalScandi,setOpenModalScandi]=useState(false)
     const scandi={

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import "swiper/scss";
 import s from './Swipper.module.scss'
@@ -8,7 +8,14 @@ import {Navigation} from "swiper";
 import {Works1} from "./Works1";
 import {Works2} from "./Works2";
 
+import {WorksMob1} from "./mobile/WorksMob1";
+import {WorksMob2} from "./mobile/WorksMob2";
+import {WorksMob3} from "./mobile/WorksMob3";
+
+
+
 export const SwipperWorks = () => {
+
     const navigationPrevRef = React.useRef(null)
     const navigationNextRef = React.useRef(null)
 
@@ -30,19 +37,25 @@ export const SwipperWorks = () => {
                     }}
 
                     className="mySwiper">
-                <SwiperSlide><Works1/></SwiperSlide>
-                <SwiperSlide className={s.swipperContainer}><Works2/></SwiperSlide>
+
+                <SwiperSlide className={s.decstop}><Works1/></SwiperSlide>
+                <SwiperSlide className={s.decstop}><Works2/></SwiperSlide>
+
+
+                <SwiperSlide className={s.mobile}><WorksMob1/></SwiperSlide>
+                <SwiperSlide className={s.mobile}><WorksMob2/></SwiperSlide>
+                <SwiperSlide className={s.mobile}><WorksMob3/></SwiperSlide>
+
+
                 {/*<SwiperSlide>Slide 3</SwiperSlide>   cтраницы слайдера*/}
                 {/*<SwiperSlide>Slide 4</SwiperSlide>*/}
                 {/*<SwiperSlide>Slide 5</SwiperSlide>*/}
 
                 <button className={`${s.button} ${s.button1}`}
-                        // disabled={navigationNextRef.current=== "Swipper_button__7++jE Swipper_button1__pDQ0V disabled"}
                         ref={navigationNextRef}>
 
                 </button>
                 <button className={`${s.button} ${s.button2}`}
-                        // disabled={!navigationPrevRef.current==="Swipper_button__7++jE Swipper_button2__WSarh disabled"}
                         ref={navigationPrevRef}>
 
                 </button>

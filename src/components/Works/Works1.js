@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Work from "./Work";
 import s from './Works.module.scss'
-import {Title} from "../Common/Title/Title";
 import socImage from './../assets/image/Soc.jpg'
 import megamotoImage from './../assets/image/Megamoto.jpg'
 import todoImage from './../assets/image/todo.jpg'
@@ -10,6 +9,7 @@ import {SocialModal} from "./modal/SocialModal";
 import {MegamotoModal} from "./modal/MegamotoModal";
 import {TodolistModal} from "./modal/TodolistModal";
 import {LearnCardModal} from "./modal/LearnCardModal";
+import {Title} from "../Common/Title/Title";
 
 export const Works1 = () => {
     const [openModalSoc,setOpenModalSoc]=useState(false)
@@ -38,8 +38,9 @@ export const Works1 = () => {
 
         <div className={s.workWrapper} id={'projects'}>
             <div className={s.fon}></div>
-         <Title title={'my project'}/>
+            <Title title={'my project'}/>
             <div className={s.wrapper}>
+
                 <Work  setOpenModal={setOpenModalTodo} style={todolist} title={'Todolist'} description={'Todolist for planning yor tasks and affairs'}/>
                 <Work setOpenModal={setOpenModalSoc} style={social} title={'Social network'}  description={'Social network'}/>
                 <Work setOpenModal={setOpenModalMeg} style={megamoto} title={'Megamoto'}  description={'Website describing the work of the store.Help in choosing a product'}/>

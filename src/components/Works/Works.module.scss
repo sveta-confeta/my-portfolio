@@ -6,10 +6,16 @@
   padding: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   background-color: $secondBackground;
   height: 1000px;
+  @media (max-width: 1430px) {
+    height: 1070px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
 
 
   .fon {
@@ -52,18 +58,24 @@
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
+  @media (max-width: 1166px) {
+    margin: 20px 0 20px 0;
+  }
 }
 .card {
   width: 450px;
   margin: 10px;
   background-color: $secondBackground;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
-  @media (max-width: 580px) {
+  @media (max-width: 590px) {
     width: 400px;
   }
-  @media (max-width: 450px) {
-    width: 295px;
+  @media (max-width: 490px) {
+    width: 350px;
   }
+  //@media (max-width: 450px) {
+  //  width: 295px;
+  //}
 
   &:hover {
     .cardCaption {

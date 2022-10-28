@@ -1,5 +1,11 @@
 @import '../sass/variables';
 
+.box{
+    @media (max-width: 565px) {
+        width: 350px !important;
+        padding: 20px 20px 30px 20px !important;
+    }
+}
 
 
 .wrap {
@@ -25,10 +31,17 @@
         text-align: center;
         font-weight: 800;
         margin-bottom: 10px;
+
+    }
+    .list{
+        @media (max-width: 565px) {
+            padding-left: 20px;
+        }
     }
     .list li{
         margin-bottom: 6px;
         color: darkslategrey;
+
     }
     .error{
         color:brown;
@@ -41,6 +54,9 @@
 .buttonsBlock {
     margin-top: 30px;
     text-align: center;
+    @media (max-width: 565px) {
+        margin-top: 20px;
+    }
 
     .btn {
         background: $lineColor !important;

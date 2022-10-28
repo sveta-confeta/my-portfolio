@@ -47,7 +47,7 @@ export const BasicModal = ({
             viewCode={viewCode}
         >
 
-            <Box sx={style}>
+            <Box sx={style} className={s.box}>
                 <div className={s.wrap}>
                     <div className={s.title}>
                         {title}

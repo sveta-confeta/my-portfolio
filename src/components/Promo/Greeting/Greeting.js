@@ -13,7 +13,7 @@ export const Greeting = () => {
 
                     <h1>I'm Svetlana Shunkova</h1>
                     <ReactTypingEffect
-                        text={["front-end developer | web developer"]}
+                        text={["front-end developer"]}
                     />
                 </div>
 

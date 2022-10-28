@@ -5,7 +5,7 @@
   opacity: 0.7;
   width: 100%;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   padding-bottom: 20px;
   @media (max-width: 570px) {
 
@@ -19,8 +19,16 @@
     align-items: center;
     padding: 130px 20px 50px 20px;
     position: relative;
-    @media (max-width: 570px) {
+    @media (max-width: 940px) {
+      padding-bottom: 20px;
+    }
+    @media (max-width: 600px) {
       min-height: 348px;
+    }
+    @media (max-width: 570px) {
+      //height: auto;
+      //margin-top: -45px;
+      //padding-top: 108px;
     }
 
     &:after {
@@ -34,24 +42,31 @@
       background-image: url("../../assets/image/myFoto.jpg");
       background-size: cover;
 
+      @media (max-width: 480px) {
+        top: -100px;
+      }
 
     }
-    .title{
+
+    .title {
       margin-bottom: 50px;
       position: relative;
-      .sectionTitle{
+
+      .sectionTitle {
         font-size: 20px;
         font-weight: 200;
         margin-top: 0;
-        color:$titleColor;
+        color: $titleColor;
         text-transform: uppercase;
         letter-spacing: 5px;
+
       }
-      &::after{
+
+      &::after {
         content: '';
         position: absolute;
-        background:$lineColor;
-        transform: translate(-50%,50%);
+        background: $lineColor;
+        transform: translate(-50%, 50%);
         height: 1px;
         width: 50%;
         left: 50%;
@@ -66,6 +81,7 @@
       line-height: 30px;
       letter-spacing: 1px;
       text-align: center;
+
     }
   }
 }

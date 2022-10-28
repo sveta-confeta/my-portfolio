@@ -11,10 +11,12 @@
       opacity: 0.8;
       padding: 20px;
       position: absolute;
+      cursor: pointer;
       right: 0;
       top: 0;
       left: 0;
       height: 270px;
+      gap:15px;
       transform: translateY(-190px);
       transition: ease-in 0.8s;
     }
@@ -42,10 +44,6 @@
           list-style: none;
         }
 
-        @media (max-width: 400px) {
-          padding-bottom: 20px;
-        }
-
       }
 
 
@@ -60,10 +58,12 @@
   }
 
   .burgerBtn {
-    width: 30px;
-    height: 30px;
-    background: #eeeeee;
+   background-image: url("./../../assets/image/meat.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
     position: absolute;
+    cursor: pointer;
     top: 24px;
     right: 15px;
     @media(min-width: 400px) {

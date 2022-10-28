@@ -7,6 +7,10 @@
     @media (max-width:850px) {
        bottom: 70%;
     }
+    @media (max-width:600px) {
+        margin: 30px 0 60px 0;
+        top:10%
+    }
     .text{
         display: flex;
         flex-direction: column;
@@ -51,7 +55,7 @@
             @media (max-width:1100px) {
                 padding: 6px 20px;
             }
-            @media (max-width:472px) {
+            @media (max-width:485px) {
                 max-width: 350px;
                 padding: 6px;
                 text-align: center;

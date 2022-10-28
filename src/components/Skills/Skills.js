@@ -60,7 +60,7 @@ export const Skills = () => {
     }
 
     const [show, setShow] = useState(true);
-   
+
 
     useEffect(()=>{
         if(window.innerWidth <= 706){
@@ -69,6 +69,10 @@ export const Skills = () => {
     },[window.innerWidth])
 
     // window.screen.width
+
+    const closedOpenHandler=()=>{
+        setShow(!show)
+    }
 
 
     return (
@@ -111,9 +115,7 @@ export const Skills = () => {
 
                         : ''}
                 </div>
-                <button className={s.btn} onClick={() => {
-                    setShow(!show)
-                }}> show more
+                <button className={s.btn} onClick= {closedOpenHandler}> { !show ? "show more" : "close"}
                 </button>
 
 

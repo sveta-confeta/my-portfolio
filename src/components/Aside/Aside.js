@@ -3,7 +3,7 @@ import s from './Aside.module.css';
 
 const Aside = () => {
     return (
-        <div className={s.wrapperAside}>
+        <div className={s.wrapperAside} id="contacts">
             <div className={s.container}>
                 <div className={s.telework}>
                     Look for  distant work  options <br/>

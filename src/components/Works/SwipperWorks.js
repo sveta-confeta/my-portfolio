@@ -35,7 +35,7 @@ export const SwipperWorks = () => {
                         swiper.params.navigation.prevEl = navigationPrevRef.current
                         console.log(navigationNextRef.current)
                     }}
-
+                    id="projects"
                     className="mySwiper">
 
                 <SwiperSlide className={s.decstop}><Works1/></SwiperSlide>

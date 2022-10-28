@@ -20,7 +20,7 @@ export const TodolistModal = React.memo(
                    </div>
                     <ul className={s.list}>
                         <li>Implemented autorization</li>
-                        <li>Creating, editing, deleting tasks</li>
+                        <li>Creating, editing, deleting tasks and sorting to status</li>
 
                     </ul>
                 </div>

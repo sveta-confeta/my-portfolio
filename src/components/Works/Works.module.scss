@@ -169,7 +169,9 @@
   transform: translateY(-30%);
   text-align: center;
   transition: 0.8s;
-
+  @media (max-width: 1022px) {
+    top: 43%;
+  }
 }
 
 .cardTitle {

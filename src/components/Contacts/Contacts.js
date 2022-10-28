@@ -3,10 +3,10 @@ import s from './Contacts.module.scss'
 import {Title} from "../Common/Title/Title";
 import {useFormik} from "formik";
 
-const Contacts = (props) => {
+const Contacts = () => {
 
 
-    // window.screen.width
+
 
     const formik = useFormik({
         initialValues: {

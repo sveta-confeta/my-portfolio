@@ -105,7 +105,7 @@
     }
   }
 
-  .cardThumb {
+  .cardThumb { //!!!!!
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -113,19 +113,21 @@
     max-height: 400px;
     overflow: hidden;
     border-radius: 15px;
+    &:hover{
+      &::after {
+        position: absolute;
+        top: 0;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+        background-color: rgba(17, 40, 44, 0.63);
 
-    &::after {
-      position: absolute;
-      top: 0;
-      display: block;
-      content: '';
-      width: 100%;
-      height: 100%;
-      //background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, 0) 100%);
-      transition: 0.3s;
+      }
+
     }
   }
-
 
 }
 
@@ -194,25 +196,20 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .cardThumb {
-    max-height: 500px;
-  }
-}
+//@media (min-width: 1024px) {
+//  .cardThumb {
+//    max-height: 500px;
+//  }
+//}
+//
+//@media (min-width: 1024px) {
+//  .cardThumb::after {
+//    top: calc(100% - 140px);
+//
+//  }
+//}
+//
 
-@media (min-width: 1024px) {
-  .cardThumb::after {
-    top: calc(100% - 140px);
-
-  }
-}
-
-@media (min-width: 1024px) {
-  .cardThumb:hover::after {
-   background-color: rgba(17, 40, 44, 0.63);
-
-  }
-}
 
 
 @media (min-width: 1024px) {

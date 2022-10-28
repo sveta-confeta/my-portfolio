@@ -11,6 +11,10 @@
         color:$titleColor;
         text-transform: uppercase;
         letter-spacing: 5px;
+        @media (max-width: 406px) {
+          font-size: 18px;
+            text-align: center;
+        }
     }
     &::after{
         content: '';

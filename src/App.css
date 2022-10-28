@@ -10,8 +10,6 @@
 body{
   font-family: 'Nunito Sans', sans-serif;
   color: wheat;
-  background-image: url("./components/assets/image/background.jpg");
- background-size: cover;
   box-sizing: border-box;
 
 }

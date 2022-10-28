@@ -15,7 +15,7 @@
     padding-top: 25px;
     padding-bottom: 50px;
   }
-  @media (max-width: 1027px) {
+  @media (max-width: 1070px) {
     height: 1050px;
   }
   @media (max-width: 547px) {
@@ -46,6 +46,9 @@
     justify-content: center;
     margin-bottom: 30px;
     gap: 20px;
+    @media (max-width: 1170px) {
+      max-width: 800px;
+    }
 
   }
 }
@@ -63,7 +66,7 @@
   border-radius: 15px;
   margin: 30px;
   transition: 0.5s;
-  @media (max-width: 1166px) {
+  @media (max-width: 1170px) {
     margin: 20px 0 20px 0;
   }
 }
@@ -113,6 +116,19 @@
     max-height: 400px;
     overflow: hidden;
     border-radius: 15px;
+    @media (max-width: 1021px) {
+      &::after {
+        position: absolute;
+        top: 0;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+        background-color: rgba(17, 40, 44, 0.63);
+
+      }
+    }
     &:hover{
       &::after {
         position: absolute;
@@ -195,22 +211,6 @@
 
   }
 }
-
-//@media (min-width: 1024px) {
-//  .cardThumb {
-//    max-height: 500px;
-//  }
-//}
-//
-//@media (min-width: 1024px) {
-//  .cardThumb::after {
-//    top: calc(100% - 140px);
-//
-//  }
-//}
-//
-
-
 
 @media (min-width: 1024px) {
   .cardCaption {

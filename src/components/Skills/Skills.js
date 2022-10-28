@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Skill} from "./Skill";
 import s from './Skills.module.scss'
 import {Title} from "../Common/Title/Title";
@@ -61,12 +61,12 @@ export const Skills = () => {
 
     const [show, setShow] = useState(true);
    
-    //
-    // useEffect(()=>{
-    //     if(window.innerWidth <= 706){
-    //         setShow(false)
-    //     }
-    // },[window.innerWidth])
+
+    useEffect(()=>{
+        if(window.innerWidth <= 706){
+            setShow(false)
+        }
+    },[window.innerWidth])
 
     // window.screen.width
 

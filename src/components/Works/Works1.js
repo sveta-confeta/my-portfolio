@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Work from "./Work";
 import s from './Works.module.scss'
-import socImage from './../assets/image/Soc.jpg'
+import todoAngImage from './../assets/image/todoAngImg.jpg'
 import megamotoImage from './../assets/image/Megamoto.jpg'
 import todoImage from './../assets/image/todo.jpg'
 import learnImage from  './../assets/image/learnCard.jpg'
@@ -10,14 +10,16 @@ import {MegamotoModal} from "./modal/MegamotoModal";
 import {TodolistModal} from "./modal/TodolistModal";
 import {LearnCardModal} from "./modal/LearnCardModal";
 import {Title} from "../Common/Title/Title";
+import {TodoAngModal} from "./modal/TodoAngModal";
 
 export const Works1 = () => {
-    const [openModalSoc,setOpenModalSoc]=useState(false)
+    const [openModalTodoAng,setOpenModalTodoAng]=useState(false)
     const [openModalMeg,setOpenModalMeg]=useState(false)
     const [openModalTodo,setOpenModalTodo]=useState(false)
     const [openModalLearn,setOpenModalLearn]=useState(false)
-    const social={
-        backgroundImage:`url(${socImage})`,
+
+    const todoAngular={
+        backgroundImage:`url(${todoAngImage})`,
         backgroundSize:'cover',
     }
     const megamoto={
@@ -41,15 +43,15 @@ export const Works1 = () => {
             <Title title={'my project'}/>
             <div className={s.wrapper}>
 
-                <Work  setOpenModal={setOpenModalTodo} style={todolist} title={'Todolist'} description={'Todolist for planning yor tasks and affairs'}/>
-                <Work setOpenModal={setOpenModalSoc} style={social} title={'Social network'}  description={'Social network'}/>
+                <Work  setOpenModal={setOpenModalTodo} style={todolist} title={'Todolist (React)'} description={'Todolist for planning your tasks and affairs'}/>
+                <Work setOpenModal={setOpenModalTodoAng} style={todoAngular} title={'Todolist (Angular)'}  description={'Todolist for planning your tasks and affairs'}/>
                 <Work setOpenModal={setOpenModalMeg} style={megamoto} title={'Megamoto'}  description={'Website describing the work of the store.Help in choosing a product'}/>
                 <Work  setOpenModal={setOpenModalLearn} style={learnCard} title={'Learn Cards'}  description={'Possibility to create learning cards with questions and answers'}/>
 
 
             </div>
             <MegamotoModal isOpenModal={openModalMeg} setIsOpenModal={setOpenModalMeg}/>
-            <SocialModal isOpenModal={openModalSoc} setIsOpenModal={setOpenModalSoc}/>
+            <TodoAngModal isOpenModal={openModalTodoAng} setIsOpenModal={setOpenModalTodoAng}/>
             <TodolistModal isOpenModal={openModalTodo} setIsOpenModal={setOpenModalTodo}/>
             <LearnCardModal isOpenModal={openModalLearn} setIsOpenModal={setOpenModalLearn}/>
         </div>

@@ -11,6 +11,7 @@ import {Works2} from "./Works2";
 import {WorksMob1} from "./mobile/WorksMob1";
 import {WorksMob2} from "./mobile/WorksMob2";
 import {WorksMob3} from "./mobile/WorksMob3";
+import {WorksMob4} from "./mobile/WorksMob4";
 
 
 
@@ -45,6 +46,7 @@ export const SwipperWorks = () => {
                 <SwiperSlide className={s.mobile}><WorksMob1/></SwiperSlide>
                 <SwiperSlide className={s.mobile}><WorksMob2/></SwiperSlide>
                 <SwiperSlide className={s.mobile}><WorksMob3/></SwiperSlide>
+                <SwiperSlide className={s.mobile}><WorksMob4/></SwiperSlide>
 
 
                 {/*<SwiperSlide>Slide 3</SwiperSlide>   cтраницы слайдера*/}

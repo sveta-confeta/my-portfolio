@@ -82,7 +82,7 @@ export const Skills = () => {
             <div className={s.wrapper}>
                 <Title title={'my skills'}/>
                 <div className={s.skills}>
-                    <Skill title={'React'} description={'Router, Next'} style={reactIcon}/>
+                    <Skill title={'React'} description={'Class components, Function components,Router, Next'} style={reactIcon}/>
                     <Skill title={'TypeScript'}
                            description={'It is a better programming language compared to JS because it has strongly typed'}
                            style={tsIcon}/>

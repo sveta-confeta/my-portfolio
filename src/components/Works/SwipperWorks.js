@@ -48,11 +48,6 @@ export const SwipperWorks = () => {
                 <SwiperSlide className={s.mobile}><WorksMob3/></SwiperSlide>
                 <SwiperSlide className={s.mobile}><WorksMob4/></SwiperSlide>
 
-
-                {/*<SwiperSlide>Slide 3</SwiperSlide>   cтраницы слайдера*/}
-                {/*<SwiperSlide>Slide 4</SwiperSlide>*/}
-                {/*<SwiperSlide>Slide 5</SwiperSlide>*/}
-
                 <button className={`${s.button} ${s.button1}`}
                         ref={navigationNextRef}>
 

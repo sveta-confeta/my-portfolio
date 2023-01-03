@@ -3,6 +3,7 @@ import Work from "./../Work";
 import s from './../Works.module.scss'
 import {Title} from "../../Common/Title/Title";
 import {SellerModal} from "../modal/SellerModal";
+import sellerImg from "./../../assets/image/seller.jpg";
 
 export const WorksMob4 = () => {
 
@@ -10,7 +11,7 @@ export const WorksMob4 = () => {
 
 
     const seller={
-        backgroundImage:`url(${seller})`,
+        backgroundImage:`url(${sellerImg})`,
         backgroundSize:'cover',
     }
 

@@ -1,4 +1,43 @@
 @import '../../Common/sass/variables';
+.choose-date {
+  position: relative;
+  cursor: pointer;
+}
+.choose-date__input {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+}
+@media (max-width: 574px) {
+  .choose-date__input {
+    left: 0;
+  }
+}
+.choose-date__input:focus ~ .choose-date__text {
+  color: #cf0b0f;
+}
+.choose-date__input:focus ~ .choose-date__text svg {
+  fill: #cf0b0f;
+}
+.choose-date__text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #323232;
+}
+.choose-date__text svg {
+  margin-right: 8px;
+}
+
 
 .abouteWrapper {
   background-color: $secondBackground;

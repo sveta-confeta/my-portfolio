@@ -56,8 +56,7 @@ const AboutMe = () => {
                     type="text"
                     className="choose-date__input js-choose-date-news"
                     id="js-choose-date-news"
-                    readOnly
-                    style={{ display: 'none' }}  // Скрываем input
+                    style={{ display: 'none' }}
                 />
                 <span className="choose-date__text" id="js-choose-date-icon-calendar-news">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

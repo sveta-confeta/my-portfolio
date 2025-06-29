@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import Work from "./../Work";
 import s from './../Works.module.scss'
-import socImage from './../../assets/image/Soc.jpg'
-import learnImage from  './../../assets/image/learnCard.jpg'
+import socImage from '../../../assets/image/Soc.jpg'
+import learnImage from '../../../assets/image/learnCard.jpg'
 import {SocialModal} from "./../modal/SocialModal";
 import {LearnCardModal} from "./../modal/LearnCardModal";
 import {Title} from "../../Common/Title/Title";

@@ -1,18 +1,24 @@
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /*border:1px solid red;*/
 }
 
-body{
+body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: black;
   color: wheat;
   box-sizing: border-box;
 
+}
+button {
+  border: transparent;
+}
+ul li {
+  list-style: none;
 }
 
 

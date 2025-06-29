@@ -13,10 +13,8 @@ export const Promo = () => {
             <Helmet>
                 <script src="https://atuin.ru/js/art/stars.js" type="text/javascript"></script>
             </Helmet>
-
             <canvas id="stars">
             </canvas>
-
             <Greeting/>
             <AboutMe/>
         </div>

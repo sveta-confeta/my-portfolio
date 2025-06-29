@@ -1,7 +1,6 @@
 import './App.css';
 import {Skills} from "./components/Skills/Skills";
 import Aside from "./components/Aside/Aside";
-import Contacts from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
 import {Helmet} from "react-helmet";
 import {Promo} from "./components/Promo/Promo";
@@ -19,10 +18,8 @@ function App() {
             </Helmet>
             <Promo/>
             <Skills/>
-            {/*<Works/>*/}
             <SwipperWorks/>
             <Aside/>
-            <Contacts/>
             <Footer/>
         </div>
     );

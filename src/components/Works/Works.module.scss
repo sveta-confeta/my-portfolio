@@ -1,7 +1,7 @@
 @import '../Common/sass/variables';
 
 .workWrapper {
-  background-image: url("./../assets/image/background.jpg");
+  background-image: url("../../assets/image/background.jpg");
   position: relative;
   padding: 25px;
   display: flex;
@@ -114,7 +114,7 @@
     }
   }
 
-  .cardThumb { //!!!!!
+  .cardThumb {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -202,7 +202,7 @@
 .cardButton {
   display: inline-block;
   padding: 10px 20px;
-  color: #343437;
+  color: white;
   border: 2px solid $lineColor;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;

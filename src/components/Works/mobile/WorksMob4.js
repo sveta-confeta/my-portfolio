@@ -3,8 +3,8 @@ import Work from "./../Work";
 import s from './../Works.module.scss'
 import {Title} from "../../Common/Title/Title";
 import {SellerModal} from "../modal/SellerModal";
-import sellerImg from "./../../assets/image/seller.jpg";
-import notesImage from "../../assets/image/notes.jpg";
+import sellerImg from "../../../assets/image/seller.jpg";
+import notesImage from "../../../assets/image/notes.jpg";
 import {NotesModal} from "../modal/NotesModal";
 
 export const WorksMob4 = () => {

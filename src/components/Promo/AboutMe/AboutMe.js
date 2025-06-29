@@ -21,17 +21,8 @@ const AboutMe = () => {
                 {
                     content: 'Сбросить',
                     className: 'show-button',
-                    onClick: function (dp) {
-                        console.log('1');
-                    },
                 },
             ],
-            onSelect: function (formattedDate, date, inst) {
-                console.log('2');
-            },
-            onShow: function () {
-                console.log('3');
-            },
         });
 
         calendarIcon.addEventListener('click', () => {
@@ -48,7 +39,7 @@ const AboutMe = () => {
                     <div className={s.sectionTitle}>A STORY ABOUT ME</div>
                 </div>
                 <p className={s.aboutP}>
-                    I'm a responsible and motivated developer with experience in creating SPA, JS(TS), React, Next, Redux, Angular leading-page using CSS and SASS. Now I am improving my skills in this direction and expanding them with the help of new technologies. I spend my leisure time studying books, as well as improving my English. I will adapt to any requirements of the company.
+                    I'm a responsible and motivated developer with experience in creating SPA, Vue, Nuxt, Pinia, React, Next, Redux, JS(TS), leading-page using CSS and SASS. Now I am improving my skills in this direction and expanding them with the help of new technologies. I spend my leisure time studying books, as well as improving my English. I will adapt to any requirements of the company.
                 </p>
             </div>
             <label className="choose-date js-choose-date choose-date-news">

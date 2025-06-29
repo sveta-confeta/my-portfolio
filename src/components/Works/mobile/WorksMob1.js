@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import Work from "./../Work";
 import s from './../Works.module.scss'
-import megamotoImage from './../../assets/image/Megamoto.jpg'
-import todoImage from './../../assets/image/todo.jpg'
+import megamotoImage from '../../../assets/image/Megamoto.jpg'
+import todoImage from '../../../assets/image/todo.jpg'
 import {MegamotoModal} from "./../modal/MegamotoModal";
-import {TodolistModal} from "./../modal/TodolistModal";
+import {LoremModal} from "../modal/LoremModal";
 
 import {Title} from "../../Common/Title/Title";
 
@@ -38,7 +38,7 @@ export const WorksMob1 = () => {
 
             </div>
             <MegamotoModal isOpenModal={openModalMeg} setIsOpenModal={setOpenModalMeg}/>
-            <TodolistModal isOpenModal={openModalTodo} setIsOpenModal={setOpenModalTodo}/>
+            <LoremModal isOpenModal={openModalTodo} setIsOpenModal={setOpenModalTodo}/>
         </div>
     );
 };

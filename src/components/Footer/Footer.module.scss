@@ -1,7 +1,7 @@
 @import '../Common/sass/variables';
 
 .footerWrapper {
-  background-image: url("./../assets/image/background.jpg");
+  background-image: url("../../assets/image/background.jpg");
   background-color: $backgroundGeneral;
   background-size: cover;
   position: relative;
@@ -38,7 +38,7 @@
   }
 }
 .iconGit {
-  background-image: url("../assets/githab.png");
+  background-image: url("../../assets/image/icons/githab.png");
   background-repeat: no-repeat;
   width: 65px;
   height: 65px;
@@ -50,7 +50,7 @@
 }
 
 .iconLink {
-  background-image: url("../assets/linkedin.png");
+  background-image: url("../../assets/image/icons/linkedin.png");
   background-repeat: no-repeat;
   width: 65px;
   height: 65px;
@@ -62,7 +62,7 @@
 
 }
 .iconCodevars {
-  background-image: url("../assets/codewars.png");
+  background-image: url("../../assets/image/icons/codewars.png");
   background-repeat: no-repeat;
   width: 65px;
   height: 65px;
@@ -75,7 +75,7 @@
 }
 
 .iconTeleg {
-  background-image: url("../assets/telegram.png");
+  background-image: url("../../assets/image/icons/telegram.png");
   background-repeat: no-repeat;
   width: 65px;
   height: 65px;

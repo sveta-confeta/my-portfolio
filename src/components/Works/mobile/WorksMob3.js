@@ -3,8 +3,8 @@ import Work from "./../Work";
 import s from './../Works.module.scss'
 import {Title} from "../../Common/Title/Title";
 import {ScandiModal} from "./../modal/ScandiModal";
-import scandiImage from "./../../assets/image/scandi.jpg"
-import todoAngImage from "../../assets/image/todoAngImg.jpg";
+import scandiImage from "../../../assets/image/scandi.jpg"
+import todoAngImage from "../../../assets/image/todoAngImg.jpg";
 import {TodoAngModal} from "../modal/TodoAngModal";
 
 export const WorksMob3 = () => {

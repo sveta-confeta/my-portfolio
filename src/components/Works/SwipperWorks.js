@@ -32,8 +32,8 @@ export const SwipperWorks = () => {
 
                     }}
                     onBeforeInit={(swiper) => {
-                        swiper.params.navigation.nextEl = navigationNextRef.current
                         swiper.params.navigation.prevEl = navigationPrevRef.current
+                        swiper.params.navigation.nextEl = navigationNextRef.current
                         console.log(navigationNextRef.current)
                     }}
                     id="projects"
@@ -41,19 +41,17 @@ export const SwipperWorks = () => {
 
                 <SwiperSlide className={s.decstop}><Works1/></SwiperSlide>
                 <SwiperSlide className={s.decstop}><Works2/></SwiperSlide>
-
-
                 <SwiperSlide className={s.mobile}><WorksMob1/></SwiperSlide>
                 <SwiperSlide className={s.mobile}><WorksMob2/></SwiperSlide>
                 <SwiperSlide className={s.mobile}><WorksMob3/></SwiperSlide>
                 <SwiperSlide className={s.mobile}><WorksMob4/></SwiperSlide>
 
-                <button className={`${s.button} ${s.button1}`}
-                        ref={navigationNextRef}>
+                <button type={'button'} className={`${s.button} ${s.buttonPrev}`} aria-label={'prev cards'}
+                        ref={navigationPrevRef}>
 
                 </button>
-                <button className={`${s.button} ${s.button2}`}
-                        ref={navigationPrevRef}>
+                <button type={"button"} className={`${s.button} ${s.buttonNext}`} aria-label={"next cards"}
+                        ref={navigationNextRef}>
 
                 </button>
             </Swiper>

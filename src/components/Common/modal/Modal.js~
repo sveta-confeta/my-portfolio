@@ -32,9 +32,8 @@ export const BasicModal = ({
                                viewCode,
 
                            }) => {
-    const handleClose = (e) => {
+    const handleClose = () => {
         setIsOpenModal(false);
-        e.stopPropagation();
     }
 
 

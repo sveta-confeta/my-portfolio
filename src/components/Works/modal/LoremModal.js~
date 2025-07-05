@@ -10,7 +10,7 @@ export const LoremModal = React.memo(
             <BasicModal
                 isOpenModal={isOpenModal}
                 setIsOpenModal={setIsOpenModal}
-                title={'Lorem (VPN required)'}
+                title={'Lorem'}
                 viewProgect={'https://sveta-confeta.github.io/lorem-project/#/login'}
                 viewCode={'https://github.com/sveta-confeta/lorem-project'}
             >

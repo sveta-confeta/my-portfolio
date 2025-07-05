@@ -1,0 +1,56 @@
+import React, {useState} from 'react';
+import Work from "./Work";
+import s from './Works.module.scss'
+import gameImage from '../../assets/image/game.jpg'
+import megamotoImage from '../../assets/image/Megamoto.jpg'
+import loremImage from '../../assets/image/lorem-poster.jpg'
+import learnImage from '../../assets/image/learnCard.jpg'
+import {MegamotoModal} from "./modal/MegamotoModal";
+import {LoremModal} from "./modal/LoremModal";
+import {LearnCardModal} from "./modal/LearnCardModal";
+import {Title} from "../Common/Title/Title";
+import {GameProjModal} from "./modal/GameProjModal";
+
+export const Works1 = () => {
+    const [openModalGame, setOpenModalGame] = useState(false)
+    const [openModalMeg, setOpenModalMeg] = useState(false)
+    const [openModalTodo, setOpenModalTodo] = useState(false)
+    const [openModalLearn, setOpenModalLearn] = useState(false)
+
+    const game = {
+        backgroundImage: `url(${gameImage})`,
+        backgroundSize: 'cover',
+    }
+    const megamoto = {
+        backgroundImage: `url(${megamotoImage})`,
+        backgroundSize: 'cover',
+    }
+    const lorem = {
+        backgroundImage: `url(${loremImage})`,
+        backgroundSize: 'cover',
+
+    }
+    const learnCard = {
+        backgroundImage: `url(${learnImage})`,
+        backgroundSize: 'cover',
+
+    }
+    return (
+        <>
+            <div className={s.wrapper}>
+                <Work setOpenModal={setOpenModalTodo} style={lorem} title={'Lorem (React)'}
+                      description={'Attention, it only works with VPN. Test work - gallery of paintings.'}/>
+                <Work setOpenModal={setOpenModalGame} style={game} title={'Game Project'}
+                      description={'Project width game cards'}/>
+                <Work setOpenModal={setOpenModalMeg} style={megamoto} title={'Megamoto'}
+                      description={'Website describing the work of the store.Help in choosing a product'}/>
+                <Work setOpenModal={setOpenModalLearn} style={learnCard} title={'Learn Cards'}
+                      description={'Possibility to create learning cards with questions and answers'}/>
+            </div>
+            <MegamotoModal isOpenModal={openModalMeg} setIsOpenModal={setOpenModalMeg}/>
+            <GameProjModal isOpenModal={openModalGame} setIsOpenModal={setOpenModalGame}/>
+            <LoremModal isOpenModal={openModalTodo} setIsOpenModal={setOpenModalTodo}/>
+            <LearnCardModal isOpenModal={openModalLearn} setIsOpenModal={setOpenModalLearn}/>
+        </>
+    );
+};

@@ -38,10 +38,6 @@
   }
   a div {
     opacity: 0.5;
-    transition: 0.5s;
-    &:hover {
-      opacity: 1;
-    }
   }
 }
 .iconGit {

@@ -135,6 +135,6 @@
 .mySwiper {
   padding: 20px 0 70px 0;
   @media (max-width: 676px) {
-    padding: 20px 0 0;
+    padding: 20px 0;
   }
 }

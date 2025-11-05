@@ -2,7 +2,7 @@
 .burgerNav {
   height: 100%;
   .mobileMenu {
-    @media (max-width: 400px) {
+    @media (max-width: 676px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -26,7 +26,7 @@
       font-size: 14px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      @media (min-width: 400px) {
+      @media (min-width: 676px) {
         display: none;
       }
 
@@ -39,7 +39,7 @@
       }
 
       .headerElement {
-        @media (max-width: 400px) {
+        @media (max-width: 676px) {
           list-style: none;
         }
 
@@ -63,9 +63,9 @@
     height: 40px;
     position: absolute;
     cursor: pointer;
-    top: 24px;
+    top: 19px;
     right: 15px;
-    @media(min-width: 400px) {
+    @media(min-width: 677px) {
       display: none;
     }
   }

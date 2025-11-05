@@ -5,6 +5,7 @@ import {Footer} from "./components/Footer/Footer";
 import {Helmet} from "react-helmet";
 import {Promo} from "./components/Promo/Promo";
 import {SwipperWorks} from "./components/Works/SwipperWorks";
+import {Download} from "./components/download/Download";
 
 
 function App() {

@@ -1,0 +1,41 @@
+.downloadItem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media(max-width: 676px) {
+        z-index: 30;
+        position: absolute;
+        top: 17px;
+        left: 15px;
+    }
+    @media (min-width: 677px) {
+        position: static;
+    }
+
+}
+.downloadItem:hover {
+    opacity: .8;
+}
+
+.downloadText {
+    display: block;
+    margin-bottom: 6px;
+    background: linear-gradient(180deg, #1fbbee 0%, #4764af 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* для Firefox */
+    color: transparent;
+    font-weight: 600;
+    white-space: nowrap;
+
+ }
+
+.downloadIcon {
+    width: 40px;
+    height: 40px;
+    @media (max-width: 676px) {
+        width: 34px;
+        height: 34px;
+    }
+}

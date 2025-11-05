@@ -12,37 +12,34 @@ import {MegamotoModal} from './modal/MegamotoModal';
 import {LoremModal} from './modal/LoremModal';
 import {NotesModal} from './modal/NotesModal';
 import {Title} from './../Common/Title/Title';
-import learnImage from "../../assets/image/learnCard.jpg";
-import {SocialModal} from "./modal/SocialModal";
 import {SellerModal} from "./modal/SellerModal";
-import {LearnCardModal} from "./modal/LearnCardModal";
 import {GameProjModal} from "./modal/GameProjModal";
 import {ScandiModal} from "./modal/ScandiModal";
+import {FlowerShopModal} from "./modal/FlowerShopModal";
 import scandiImage from "../../assets/image/scandi.jpg";
 import gameImage from "../../assets/image/game.jpg";
 import sellerImg from "../../assets/image/seller.jpg";
 import notesImage from "../../assets/image/notes.jpg";
+import flowerImage from "../../assets/image/flower.jpg";
 
 export const SwipperWorks = () => {
     const navigationPrevRef = React.useRef(null);
     const navigationNextRef = React.useRef(null);
     const [openModalMeg, setOpenModalMeg] = React.useState(false);
     const [openModalLorem, setOpenModalLorem] = React.useState(false);
-    const [openModalSoc, setOpenModalSoc] = useState(false);
-    const [openModalLearn, setOpenModalLearn] = useState(false);
     const [openModalScandi, setOpenModalScandi] = useState(false);
     const [openModalTodoAng, setOpenModalTodoAng] = useState(false);
     const [openModalSeller, setOpenModalSeller] = useState(false);
     const [openModalNotes, setOpenModalNotes] = useState(false);
+    const [openModalFlower, setOpenModalFlower] = useState(false);
 
     const megamoto = {backgroundImage: `url(${megamotoImage})`, backgroundSize: 'cover'};
     const lorem = {backgroundImage: `url(${loremImage})`, backgroundSize: 'cover'};
-    const social = {backgroundSize: 'cover'};
-    const learnCard = {backgroundImage: `url(${learnImage})`, backgroundSize: 'cover'};
     const scandi = {backgroundImage: `url(${scandiImage})`, backgroundSize: 'cover'};
     const game = {backgroundImage: `url(${gameImage})`, backgroundSize: 'cover'};
     const seller = {backgroundImage: `url(${sellerImg})`, backgroundSize: 'cover'};
     const notes = {backgroundImage: `url(${notesImage})`, backgroundSize: 'cover'};
+    const flower = {backgroundImage: `url(${flowerImage})`, backgroundSize: 'cover'};
 
     return (
         <div className={s.workWrapper} id={'projects'}>
@@ -69,6 +66,14 @@ export const SwipperWorks = () => {
                         }
                     }}
                 >
+                    <SwiperSlide>
+                        <Work
+                            setOpenModal={setOpenModalFlower}
+                            style={flower}
+                            title={'Flower Shop (Nuxt4)'}
+                            description={'Flower Shop'}
+                        />
+                    </SwiperSlide>
                     <SwiperSlide>
                         <Work
                             setOpenModal={setOpenModalLorem}
@@ -117,35 +122,19 @@ export const SwipperWorks = () => {
                             description={'LandingPage- learn CSS-project'}
                         />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <Work
-                            setOpenModal={setOpenModalSoc}
-                            style={social}
-                            title={'Social network'}
-                            description={'Social network.'}
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Work
-                            setOpenModal={setOpenModalLearn}
-                            style={learnCard}
-                            title={'Learn Cards'}
-                            description={'Possibility to create learning cards with questions and answers'}
-                        />
-                    </SwiperSlide>
                     <div className={s.buttonsWrap}>
-                    <button
-                        type="button"
-                        className={`${s.button} ${s.buttonPrev}`}
-                        aria-label="prev cards"
-                        ref={navigationPrevRef}
-                    />
-                    <button
-                        type="button"
-                        className={`${s.button} ${s.buttonNext}`}
-                        aria-label="next cards"
-                        ref={navigationNextRef}
-                    />
+                        <button
+                            type="button"
+                            className={`${s.button} ${s.buttonPrev}`}
+                            aria-label="prev cards"
+                            ref={navigationPrevRef}
+                        />
+                        <button
+                            type="button"
+                            className={`${s.button} ${s.buttonNext}`}
+                            aria-label="next cards"
+                            ref={navigationNextRef}
+                        />
                     </div>
                 </Swiper>
 
@@ -153,13 +142,12 @@ export const SwipperWorks = () => {
 
             <LoremModal isOpenModal={openModalLorem} setIsOpenModal={setOpenModalLorem}/>
             <MegamotoModal isOpenModal={openModalMeg} setIsOpenModal={setOpenModalMeg}/>
-            <SocialModal isOpenModal={openModalSoc} setIsOpenModal={setOpenModalSoc}/>
-            <LearnCardModal isOpenModal={openModalLearn} setIsOpenModal={setOpenModalLearn}/>
             <GameProjModal isOpenModal={openModalTodoAng} setIsOpenModal={setOpenModalTodoAng}/>
             <ScandiModal isOpenModal={openModalScandi} setIsOpenModal={setOpenModalScandi}/>
-    <SellerModal isOpenModal={openModalSeller} setIsOpenModal={setOpenModalSeller}/>
-    <NotesModal isOpenModal={openModalNotes} setIsOpenModal={setOpenModalNotes}/>
-</div>
-)
-    ;
+            <SellerModal isOpenModal={openModalSeller} setIsOpenModal={setOpenModalSeller}/>
+            <NotesModal isOpenModal={openModalNotes} setIsOpenModal={setOpenModalNotes}/>
+            <FlowerShopModal isOpenModal={openModalFlower} setIsOpenModal={setOpenModalFlower}/>
+        </div>
+    )
+        ;
 };

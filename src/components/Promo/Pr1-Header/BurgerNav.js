@@ -4,7 +4,7 @@ import s from "./BurgerNav.module.scss";
 export const BurgerNav = () => {
     const [menuIsOpen,setMenuIsOpen]=useState(false);
 
-    let onBurgerBtnClick=()=>{
+    let onBurgerBtnClick= ()=>{
         setMenuIsOpen(!menuIsOpen);
     }
     const closeMenu = () => {

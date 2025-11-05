@@ -7,10 +7,10 @@
   width: 100%;
   top: 0;
   right: 0;
-  @media (max-width: 500px) {
-    max-width: 500px;
+  @media (max-width: 676px) {
+    max-width: 676px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 676px) {
     background-color: transparent;
   }
 
@@ -34,14 +34,11 @@ nav {
 }
 .headerList {
   display: flex;
-  max-width: 500px;
+  max-width: 458px;
   width: 100%;
   justify-content: space-between;
   padding-left: 0;
-  @media screen and (max-width: 500px){
-    max-width: 400px;
-  }
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: 676px){
     display: none;
   }
 
